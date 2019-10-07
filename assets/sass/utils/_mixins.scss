@@ -1,0 +1,42 @@
+@mixin container($maxWidth) {
+  width: 100%;
+  margin: 0 auto;
+
+  @if $maxWidth==lg {
+    max-width: 12rem;
+  }
+
+  @if $maxWidth==sm {
+    max-width: 10rem;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    // 600px
+    @media (max-width: 46.875em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-port {
+    // 900px
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-land {
+    // 1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==big-desktop {
+    // 1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  // 1rem = 9px
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  // 1rem = 8px
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}

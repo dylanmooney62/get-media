@@ -1,0 +1,67 @@
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 46.875em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  color: #696969;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  line-height: 1;
+  color: #3e3e3e;
+  font-weight: 700;
+}
+
+.heading-1 {
+  font-size: 4.8rem;
+}
+
+.heading-2 {
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

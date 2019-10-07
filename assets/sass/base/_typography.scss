@@ -1,0 +1,39 @@
+body {
+  font-family: $font-stack-body;
+  font-weight: $weight-regular;
+  font-size: $text-base;
+  line-height: $line-height-small;
+}
+
+p {
+  color: $color-light-grey-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack-headings;
+  line-height: 1;
+  color: $color-dark-grey-2;
+  font-weight: $weight-bold;
+}
+
+.heading-1 {
+  font-size: 4.8rem;
+}
+
+.heading-2 {
+  font-size: 3rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 1.8rem;
+  font-weight: $weight-semibold;
+}
