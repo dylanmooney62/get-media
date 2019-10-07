@@ -1,0 +1,39 @@
+.header-home {
+  height: 90vh;
+  min-height: 70rem;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    right: 0px;
+    z-index: -10;
+  }
+
+  &__content {
+    @include container('lg');
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // half height of nav
+    margin-top: -3.2rem;
+  }
+
+  &__text-box {
+    max-width: 44rem;
+  }
+
+  &__title {
+    margin-bottom: $space-sm;
+  }
+
+  &__text {
+    line-height: 2;
+    margin-bottom: $space-xl;
+  }
+
+  &__illustration {
+    transform: translateX(10rem);
+  }
+}

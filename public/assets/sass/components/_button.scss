@@ -1,0 +1,24 @@
+.button {
+  font-size: $text-sm;
+  padding: $space-sm $space-xl;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  font-weight: $weight-semibold;
+  font-family: inherit;
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button--primary {
+  background-color: $color-primary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}

@@ -3,11 +3,11 @@
   margin: 0 auto;
 
   @if $maxWidth==lg {
-    max-width: 12rem;
+    max-width: 120rem;
   }
 
   @if $maxWidth==sm {
-    max-width: 10rem;
+    max-width: 100rem;
   }
 }
 

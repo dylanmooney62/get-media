@@ -6,8 +6,11 @@
 @import 'base/typography';
 
 @import 'components/button';
+@import 'components/logo';
 
 @import 'layout/header';
 @import 'layout/navigation';
 @import 'layout/main';
 @import 'layout/footer';
+
+@import 'pages/home';

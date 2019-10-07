@@ -1,0 +1,29 @@
+.nav {
+  @include container('lg');
+  display: flex;
+  justify-content: space-between;
+  padding-top: $space-xl;
+  align-items: center;
+  font-size: $text-sm;
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: $space-3xl;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-off-white-2;
+    transition: color 0.3s ease-out;
+  }
+
+  &__link:hover {
+    color: $color-off-white-1;
+  }
+}

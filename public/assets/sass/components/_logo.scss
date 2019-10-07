@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: $color-white;
+
+  &__icon {
+    margin-right: $space-xs;
+    font-size: 32px;
+    transform: translateY(-0.1rem);
+  }
+
+  &__text {
+    font-weight: $weight-bold;
+    font-size: $text-lg;
+  }
+}
