@@ -1,6 +1,8 @@
 .basket {
+  display: flex;
+  align-items: center;
+
   &__icon {
     color: $color-white;
-    transform: translateY(-0.3rem);
   }
 }
