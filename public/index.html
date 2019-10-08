@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GetMedia</title>
+    <!-- materialize -->
     <link
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -67,26 +74,51 @@
           </div>
         </a>
         <ul class="nav__list">
-          <li class="nav__item">
+          <li class="nav__item nav__item--link">
             <a href="search.html" class="nav__link">Search</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--link">
             <a href="vouchers.html" class="nav__link">Vouchers</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--link">
             <a href="contact.html" class="nav__link">Contact</a>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Log In</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Sign Up</a></li>
-          <li class="nav__item">
-            <div class="basket">
+          <li class="nav__item nav__item--link">
+            <a href="#" class="nav__link">Log In</a>
+          </li>
+          <li class="nav__item nav__item--link">
+            <a href="#" class="nav__link">Sign Up</a>
+          </li>
+          <li class="nav__item nav__item--basket">
+            <div class="basket" role="button">
               <i class="basket__icon material-icons">
                 shopping_basket
               </i>
             </div>
           </li>
+          <li class="nav__item nav__item--menu js-menu">
+            <a
+              href="#"
+              data-target="slide-out"
+              class="nav__hamburger"
+              role="button"
+            >
+              <i class="basket__icon material-icons">
+                menu
+              </i>
+            </a>
+          </li>
         </ul>
       </nav>
+      <!-- side-navigation -->
+      <ul id="slide-out" class="sidenav">
+        <li><a href="search.html">Search</a></li>
+        <li><a href="vouchers.html">Vouchers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Sign up</a></li>
+      </ul>
+
       <div class="header-home__content">
         <div class="header-home__text-box">
           <h1 class="header-home__title heading-1">GetMedia</h1>
@@ -103,5 +135,8 @@
         />
       </div>
     </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/features/nav.js"></script>
   </body>
 </html>

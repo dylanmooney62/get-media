@@ -4,7 +4,11 @@
   justify-content: space-between;
   padding-top: $space-xl;
   align-items: center;
-  font-size: $text-sm;
+  background-color: transparent;
+  box-shadow: none;
+  line-height: 1;
+  position: relative;
+  z-index: 100;
 
   &__list {
     display: flex;
@@ -12,19 +16,42 @@
     align-items: center;
   }
 
-  &__item:not(:last-child) {
+  &__item--link {
     margin-right: $space-3xl;
+    @media only screen and (max-width: 1240px) {
+      display: none;
+    }
+  }
+
+  &__item--basket {
+    @media only screen and (max-width: 1240px) {
+      display: none;
+    }
+  }
+
+  &__item--menu {
+    display: none;
+    visibility: none;
+    cursor: pointer;
+
+    @media only screen and (max-width: 1240px) {
+      display: block;
+      visibility: visible;
+    }
   }
 
   &__link:link,
   &__link:visited {
     display: inline-block;
+    padding: 0;
     text-decoration: none;
     color: $color-off-white-2;
     transition: color 0.3s ease-out;
+    font-size: $text-sm;
   }
 
   &__link:hover {
     color: $color-off-white-1;
+    background-color: transparent;
   }
 }
