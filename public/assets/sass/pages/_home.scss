@@ -27,6 +27,10 @@
 
     // half height of nav
     margin-top: -3.2rem;
+
+    @media only screen and (max-width: 1000px) {
+      margin-top: 0;
+    }
   }
 
   &__text-box {
@@ -73,6 +77,16 @@
 
     @media only screen and (max-width: 1000px) {
       display: none;
+    }
+  }
+
+  &__border {
+    position: absolute;
+    bottom: -1.5rem;
+    display: none;
+
+    @media only screen and (max-width: 1000px) {
+      display: block;
     }
   }
 }

@@ -1,3 +1,11 @@
+.u-wave-border path {
+  fill: #ffffff !important;
+  opacity: 1;
+  width: 100%;
+  position: relative;
+  z-index: 200;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
@@ -245,6 +253,12 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .header-home__content {
+    margin-top: 0;
+  }
+}
+
 .header-home__text-box {
   max-width: 44rem;
   position: relative;
@@ -303,6 +317,18 @@ h6 {
 @media only screen and (max-width: 1000px) {
   .header-home__illustration {
     display: none;
+  }
+}
+
+.header-home__border {
+  position: absolute;
+  bottom: -1.5rem;
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header-home__border {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
