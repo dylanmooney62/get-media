@@ -2,7 +2,7 @@
   @include container('lg');
   padding-top: $space-lg;
   padding-bottom: $space-md;
-  border-top: 1px solid $color-light-grey-3;
+  border-top: 0.1rem solid $color-light-grey-3;
 
   &__nav {
     background-color: transparent;
@@ -11,13 +11,39 @@
     justify-content: space-between;
     align-items: center;
     height: unset;
+
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 1000px) {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-bottom: $space-md;
+
+      transform: translateX(-0.7rem);
+    }
+
+    @media only screen and (max-width: 700px) {
+      max-width: 90%;
+      margin: 0 auto;
+    }
   }
 
   &__item {
     padding: unset;
 
     &:not(:last-child) {
-      margin-right: $space-3xl;
+      margin-right: $space-3xl !important;
+
+      @media only screen and (max-width: 700px) {
+        margin-right: $space-2xl !important;
+      }
     }
   }
 

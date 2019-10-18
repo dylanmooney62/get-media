@@ -62,7 +62,7 @@
 }
 
 .section--cta {
-  @include container('sm');
+  @include container('lg');
   text-align: center;
 
   .section__title {
