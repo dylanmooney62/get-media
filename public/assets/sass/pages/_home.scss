@@ -1,5 +1,6 @@
 .header-home {
   height: 90vh;
+  max-height: 90rem;
   min-height: 70rem;
   position: relative;
 
@@ -88,5 +89,15 @@
     @media only screen and (max-width: 1000px) {
       display: block;
     }
+  }
+}
+
+.section--features {
+  @include container('lg');
+  text-align: center;
+  padding: 15rem 0;
+
+  .heading-2 {
+    margin-bottom: $space-4xl;
   }
 }

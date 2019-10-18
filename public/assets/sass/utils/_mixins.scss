@@ -6,6 +6,10 @@
     max-width: 120rem;
   }
 
+  @if $maxWidth==md {
+    max-width: 110rem;
+  }
+
   @if $maxWidth==sm {
     max-width: 100rem;
   }

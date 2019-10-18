@@ -22,7 +22,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
+  <body ng-app="app">
     <header class="header header-home">
       <svg
         class="header-home__bg"
@@ -79,7 +79,7 @@
             </a>
           </li>
           <li class="nav__item nav__item--logo">
-            <a href="index.html" class="nav__link">
+            <a href="#/!" class="nav__link">
               <div class="logo">
                 <i class="logo__icon material-icons">
                   library_music
@@ -91,7 +91,7 @@
         </ul>
         <ul class="nav__list">
           <li class="nav__item nav__item--link">
-            <a href="search.html" class="nav__link">Search</a>
+            <a href="./pages/search.html" class="nav__link">Search</a>
           </li>
           <li class="nav__item nav__item--link">
             <a href="vouchers.html" class="nav__link">Vouchers</a>
@@ -117,7 +117,7 @@
       <!-- side-navigation -->
       <ul id="slide-out" class="sidenav">
         <li>
-          <a href="search.html" class="waves-effect waves-primary">Home</a>
+          <a href="index.html" class="waves-effect waves-primary">Home</a>
         </li>
         <li>
           <a href="search.html" class="waves-effect waves-primary">Search</a>
@@ -163,7 +163,56 @@
       </svg>
     </header>
 
+    <main>
+      <section class="section section--features">
+        <h2 class="heading-2">Unlimited Media, Wherever you are</h2>
+        <div class="feature-list">
+          <li class="feature-list__item">
+            <div class="feature">
+              <img
+                src="./assets/images/moon-landing.svg"
+                alt="illustration of astronaut landing on moon"
+                class="feature__img"
+              />
+              <h3 class="feature__title heading-3">World Wide</h3>
+              <p class="feature__text">
+                We offer the largest selection of media content across the
+                globe.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature">
+              <img
+                src="./assets/images/music-app.svg"
+                class="feature__img"
+                alt="illustration of women dancing next to mobile device displaying music player app"
+              />
+              <h3 class="feature__title heading-3">Anytime, Anywhere</h3>
+              <p class="feature__text">
+                Stream anytime and anywhere using your mobile device
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature">
+              <img
+                src="./assets/images/social.svg"
+                class="feature__img"
+                alt="illustration of women sitting beside large mobile device displaying social media apps"
+              />
+              <h3 class="feature__title heading-3">Sharing is caring</h3>
+              <p class="feature__text">
+                Found something you love? Easily share it with your friends
+              </p>
+            </div>
+          </li>
+        </div>
+      </section>
+    </main>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/features/nav.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>

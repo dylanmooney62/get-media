@@ -127,6 +127,58 @@ h6 {
   color: #ffffff;
 }
 
+.feature-list {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 1240px) {
+  .feature-list {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .feature-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.feature {
+  max-width: 30rem;
+}
+
+.feature__img {
+  margin-bottom: 4.8rem;
+  max-height: 20rem;
+  margin-right: auto;
+  display: block;
+}
+
+.feature__title {
+  margin-bottom: 2.4rem;
+  text-align: left;
+}
+
+.feature__text {
+  text-align: left;
+  line-height: 1.7;
+}
+
 .nav {
   width: 100%;
   margin: 0 auto;
@@ -211,6 +263,7 @@ h6 {
 
 .header-home {
   height: 90vh;
+  max-height: 90rem;
   min-height: 70rem;
   position: relative;
 }
@@ -335,5 +388,23 @@ h6 {
   .header-home__border {
     display: block;
   }
+}
+
+.section--features {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 120rem;
+  text-align: center;
+  padding: 15rem 0;
+}
+
+@media only screen and (max-width: 1240px) {
+  .section--features {
+    width: 95%;
+  }
+}
+
+.section--features .heading-2 {
+  margin-bottom: 9.6rem;
 }
 /*# sourceMappingURL=main.css.map */

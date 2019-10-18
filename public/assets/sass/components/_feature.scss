@@ -1,0 +1,32 @@
+.feature-list {
+  @include container('md');
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.feature {
+  max-width: 30rem;
+
+  &__img {
+    margin-bottom: $space-2xl;
+    max-height: 20rem;
+    margin-right: auto;
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: $space-lg;
+    text-align: left;
+  }
+
+  &__text {
+    text-align: left;
+    line-height: 1.7;
+  }
+}
