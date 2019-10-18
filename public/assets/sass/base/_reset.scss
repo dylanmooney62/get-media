@@ -2,6 +2,10 @@ html {
   // 1rem = 10px
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 56.25%;
+  }
 }
 
 *,

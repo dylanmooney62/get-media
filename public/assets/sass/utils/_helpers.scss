@@ -1,9 +1,15 @@
-.u-wave-border path {
-  fill: #ffffff !important;
-  opacity: 1;
-  width: 100%;
-  position: relative;
-  z-index: 200;
+.u-wave-border {
+  position: absolute;
+  width: 102%;
+  bottom: -1px;
+  transform: translateX(-10px);
+  display: block;
+
+  @media only screen and (max-width: 500px) {
+    transform: translateX(-2px);
+    bottom: -1px;
+    width: 110%;
+  }
 }
 
 .waves-effect.waves-primary .waves-ripple {

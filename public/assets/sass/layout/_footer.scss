@@ -4,6 +4,10 @@
   padding-bottom: $space-md;
   border-top: 0.1rem solid $color-light-grey-3;
 
+  @media only screen and (max-width: 1000px) {
+    padding-top: $space-xl;
+  }
+
   &__nav {
     background-color: transparent;
     box-shadow: none;
@@ -31,7 +35,6 @@
 
     @media only screen and (max-width: 700px) {
       max-width: 90%;
-      margin: 0 auto;
     }
   }
 
@@ -43,6 +46,10 @@
 
       @media only screen and (max-width: 700px) {
         margin-right: $space-2xl !important;
+      }
+
+      @media only screen and (max-width: 500px) {
+        margin-right: $space-xl !important;
       }
     }
   }

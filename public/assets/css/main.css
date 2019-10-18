@@ -1,9 +1,19 @@
-.u-wave-border path {
-  fill: #ffffff !important;
-  opacity: 1;
-  width: 100%;
-  position: relative;
-  z-index: 200;
+.u-wave-border {
+  position: absolute;
+  width: 102%;
+  bottom: -1px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .u-wave-border {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+    bottom: -1px;
+    width: 110%;
+  }
 }
 
 .waves-effect.waves-primary .waves-ripple {
@@ -14,6 +24,12 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 56.25%;
+  }
 }
 
 *,
@@ -355,6 +371,12 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .footer {
+    padding-top: 3.2rem;
+  }
+}
+
 .footer__nav {
   background-color: transparent;
   -webkit-box-shadow: none;
@@ -402,7 +424,6 @@ h6 {
 @media only screen and (max-width: 700px) {
   .footer__list {
     max-width: 90%;
-    margin: 0 auto;
   }
 }
 
@@ -417,6 +438,12 @@ h6 {
 @media only screen and (max-width: 700px) {
   .footer__item:not(:last-child) {
     margin-right: 4.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer__item:not(:last-child) {
+    margin-right: 3.2rem !important;
   }
 }
 
@@ -446,10 +473,19 @@ h6 {
 .section__border {
   position: absolute;
   width: 102%;
-  bottom: -0.1rem;
-  -webkit-transform: translateX(-1rem);
-          transform: translateX(-1rem);
+  bottom: -1px;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
   display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .section__border {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+    bottom: -1px;
+    width: 110%;
+  }
 }
 
 .section--features {
@@ -553,6 +589,7 @@ h6 {
   max-height: 90rem;
   min-height: 70rem;
   position: relative;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -621,6 +658,12 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .header-home__text-box {
+    max-width: 80%;
+  }
+}
+
 .header-home__title {
   margin-bottom: 1.2rem;
 }
@@ -665,14 +708,12 @@ h6 {
   }
 }
 
-.header-home__border {
-  position: absolute;
-  bottom: -1.5rem;
+.header-home .u-wave-border {
   display: none;
 }
 
 @media only screen and (max-width: 1000px) {
-  .header-home__border {
+  .header-home .u-wave-border {
     display: block;
   }
 }

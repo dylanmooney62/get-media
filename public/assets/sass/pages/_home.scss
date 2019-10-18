@@ -3,6 +3,7 @@
   max-height: 90rem;
   min-height: 70rem;
   position: relative;
+  overflow: hidden;
 
   @media only screen and (max-width: 1000px) {
     @include bg-gradient();
@@ -44,6 +45,10 @@
     @media only screen and (max-width: 1000px) {
       margin-top: -12rem;
     }
+
+    @media only screen and (max-width: 500px) {
+      max-width: 80%;
+    }
   }
 
   &__title {
@@ -81,11 +86,8 @@
     }
   }
 
-  &__border {
-    position: absolute;
-    bottom: -1.5rem;
+  .u-wave-border {
     display: none;
-
     @media only screen and (max-width: 1000px) {
       display: block;
     }
