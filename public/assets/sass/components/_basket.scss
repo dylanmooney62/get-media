@@ -1,6 +1,7 @@
 .basket {
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &__icon {
     color: $color-white;

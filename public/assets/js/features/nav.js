@@ -1,6 +1,6 @@
 const nav = document.querySelector('.sidenav');
 const navigation = M.Sidenav.init(nav, {
-  edge: 'right',
+  edge: 'left',
 });
 
 document.querySelector('.js-menu').addEventListener('click', () => {
