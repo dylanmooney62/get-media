@@ -34,6 +34,8 @@ body {
 
 p {
   color: #696969;
+  line-height: 1.7;
+  font-size: 1.6rem;
 }
 
 h1,
@@ -89,6 +91,24 @@ h6 {
 
 .button--primary:hover {
   background-color: #00afa0;
+}
+
+.button--secondary {
+  background-color: #174079;
+  color: #ffffff;
+}
+
+.button--secondary:hover {
+  background-color: #133668;
+}
+
+.button--tertiary {
+  background-color: #ea526f;
+  color: #ffffff;
+}
+
+.button--tertiary:hover {
+  background-color: #d64a65;
 }
 
 .logo {
@@ -261,6 +281,75 @@ h6 {
   background-color: transparent;
 }
 
+.section {
+  padding: 15rem 0;
+}
+
+.section__border {
+  position: absolute;
+  width: 102%;
+  bottom: 0;
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+  display: block;
+}
+
+.section--features {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .section--features {
+    width: 95%;
+  }
+}
+
+.section--features .heading-2 {
+  margin-bottom: 9.6rem;
+}
+
+.section--info {
+  position: relative;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
+  background-image: linear-gradient(to bottom right, #01bfb0, #174079);
+}
+
+.section--info .section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .section--info .section__container {
+    width: 95%;
+  }
+}
+
+.section--info .heading-2 {
+  margin-bottom: 1.6rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.section--info .section__text-box {
+  margin-left: 9.6rem;
+}
+
+.section--info p {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 3.2rem;
+}
+
 .header-home {
   height: 90vh;
   max-height: 90rem;
@@ -388,23 +477,5 @@ h6 {
   .header-home__border {
     display: block;
   }
-}
-
-.section--features {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 120rem;
-  text-align: center;
-  padding: 15rem 0;
-}
-
-@media only screen and (max-width: 1240px) {
-  .section--features {
-    width: 95%;
-  }
-}
-
-.section--features .heading-2 {
-  margin-bottom: 9.6rem;
 }
 /*# sourceMappingURL=main.css.map */

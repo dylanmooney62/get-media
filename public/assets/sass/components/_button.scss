@@ -22,3 +22,21 @@
     background-color: $color-primary-dark;
   }
 }
+
+.button--secondary {
+  background-color: $color-secondary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+}
+
+.button--tertiary {
+  background-color: $color-tertiary;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-tertiary-dark;
+  }
+}

@@ -5,7 +5,7 @@
   position: relative;
 
   @media only screen and (max-width: 1000px) {
-    background-image: linear-gradient(to bottom right, #01bfb0, #174079);
+    @include bg-gradient();
   }
 
   &__bg {
@@ -89,15 +89,5 @@
     @media only screen and (max-width: 1000px) {
       display: block;
     }
-  }
-}
-
-.section--features {
-  @include container('lg');
-  text-align: center;
-  padding: 15rem 0;
-
-  .heading-2 {
-    margin-bottom: $space-4xl;
   }
 }

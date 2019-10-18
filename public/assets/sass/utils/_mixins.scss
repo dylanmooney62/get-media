@@ -18,3 +18,7 @@
     width: 95%;
   }
 }
+
+@mixin bg-gradient {
+  background-image: linear-gradient(to bottom right, #01bfb0, #174079);
+}
