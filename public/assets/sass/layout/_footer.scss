@@ -1,0 +1,41 @@
+.footer {
+  @include container('lg');
+  padding-top: $space-lg;
+  padding-bottom: $space-md;
+  border-top: 1px solid $color-light-grey-3;
+
+  &__nav {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: unset;
+  }
+
+  &__item {
+    padding: unset;
+
+    &:not(:last-child) {
+      margin-right: $space-3xl;
+    }
+  }
+
+  &__link {
+    display: block;
+    color: $color-light-grey-1;
+    padding: 0;
+    line-height: 1;
+    font-size: $text-sm;
+    transition: 0.3s color ease-out;
+
+    &:hover {
+      background: unset;
+      color: $color-dark-grey-2;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}
