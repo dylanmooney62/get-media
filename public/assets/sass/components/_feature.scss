@@ -11,7 +11,7 @@
 
   &__item:not(:last-child) {
     @media only screen and (max-width: 1000px) {
-      margin-bottom: $space-3xl;
+      margin-bottom: $space-4xl;
     }
   }
 }
