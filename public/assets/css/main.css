@@ -59,6 +59,12 @@ h6 {
   font-size: 3rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 2.6rem;
+  }
+}
+
 .heading-3 {
   font-size: 2rem;
 }
@@ -184,8 +190,26 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+}
+
 .feature {
   max-width: 30rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .feature {
+    max-width: 33vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .feature {
+    max-width: 50vw;
+  }
 }
 
 .feature__img {
@@ -195,14 +219,33 @@ h6 {
   display: block;
 }
 
+@media only screen and (max-width: 1000px) {
+  .feature__img {
+    max-height: unset;
+    width: 100%;
+  }
+}
+
 .feature__title {
   margin-bottom: 2.4rem;
   text-align: left;
 }
 
+@media only screen and (max-width: 1000px) {
+  .feature__title {
+    text-align: center;
+  }
+}
+
 .feature__text {
   text-align: left;
   line-height: 1.7;
+}
+
+@media only screen and (max-width: 1000px) {
+  .feature__text {
+    text-align: center;
+  }
 }
 
 .nav {
@@ -294,7 +337,7 @@ h6 {
 .section__border {
   position: absolute;
   width: 102%;
-  bottom: 0;
+  bottom: -0.1rem;
   -webkit-transform: translateX(-1rem);
           transform: translateX(-1rem);
   display: block;
@@ -342,6 +385,18 @@ h6 {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .section--info .section__container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section--info .section__img {
+    display: none;
+  }
+}
+
 .section--info .heading-2 {
   margin-bottom: 1.6rem;
   color: rgba(255, 255, 255, 0.95);
@@ -349,6 +404,13 @@ h6 {
 
 .section--info .section__text-box {
   margin-left: 9.6rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .section--info .section__text-box {
+    margin-left: 0;
+    width: 90%;
+  }
 }
 
 .section--info p {
