@@ -40,6 +40,10 @@
     }
   }
 
+  &__hamburger {
+    padding: 0;
+  }
+
   &__link:link,
   &__link:visited {
     display: inline-block;

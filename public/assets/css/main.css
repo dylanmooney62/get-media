@@ -315,6 +315,10 @@ h6 {
   }
 }
 
+.nav__hamburger {
+  padding: 0;
+}
+
 .nav__link:link, .nav__link:visited {
   display: inline-block;
   padding: 0;
