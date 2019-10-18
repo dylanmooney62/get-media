@@ -40,3 +40,8 @@
     background-color: $color-tertiary-dark;
   }
 }
+
+.button--large {
+  font-size: $text-base;
+  padding: $space-md $space-2xl;
+}

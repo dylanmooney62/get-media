@@ -46,3 +46,16 @@
     margin-bottom: $space-xl;
   }
 }
+
+.section--cta {
+  @include container('sm');
+  text-align: center;
+
+  .section__title {
+    margin-bottom: $space-md;
+  }
+
+  p {
+    margin-bottom: $space-2xl;
+  }
+}

@@ -48,6 +48,7 @@ h6 {
   line-height: 1;
   color: #292929;
   font-weight: 700;
+  margin: 0;
 }
 
 .heading-1 {
@@ -109,6 +110,11 @@ h6 {
 
 .button--tertiary:hover {
   background-color: #d64a65;
+}
+
+.button--large {
+  font-size: 1.6rem;
+  padding: 1.6rem 4.8rem;
 }
 
 .logo {
@@ -348,6 +354,27 @@ h6 {
 .section--info p {
   color: rgba(255, 255, 255, 0.95);
   margin-bottom: 3.2rem;
+}
+
+.section--cta {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1240px) {
+  .section--cta {
+    width: 95%;
+  }
+}
+
+.section--cta .section__title {
+  margin-bottom: 1.6rem;
+}
+
+.section--cta p {
+  margin-bottom: 4.8rem;
 }
 
 .header-home {
