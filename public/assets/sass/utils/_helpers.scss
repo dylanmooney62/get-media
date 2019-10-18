@@ -5,3 +5,7 @@
   position: relative;
   z-index: 200;
 }
+
+.waves-effect.waves-primary .waves-ripple {
+  background-color: $color-primary;
+}

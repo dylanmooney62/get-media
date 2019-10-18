@@ -6,6 +6,10 @@
   z-index: 200;
 }
 
+.waves-effect.waves-primary .waves-ripple {
+  background-color: #01bfb0;
+}
+
 html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
