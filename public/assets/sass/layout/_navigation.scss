@@ -42,6 +42,12 @@
 
   &__hamburger {
     padding: 0;
+    height: unset !important;
+    line-height: 1;
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   &__link:link,
