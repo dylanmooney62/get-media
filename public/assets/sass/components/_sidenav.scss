@@ -1,7 +1,7 @@
-.sidenav__item--active {
-  background-color: $color-primary;
+.sidenav__item.active {
+  background-color: $color-primary !important;
 }
 
-.sidenav__item--active .sidenav__link {
+.sidenav__item.active .sidenav__link {
   color: #ffffff !important;
 }

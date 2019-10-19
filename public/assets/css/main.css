@@ -237,11 +237,11 @@ h6 {
   }
 }
 
-.sidenav__item--active {
-  background-color: #01bfb0;
+.sidenav__item.active {
+  background-color: #01bfb0 !important;
 }
 
-.sidenav__item--active .sidenav__link {
+.sidenav__item.active .sidenav__link {
   color: #ffffff !important;
 }
 
