@@ -1,0 +1,61 @@
+.voucher-list {
+  @include container('md');
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $space-md;
+  list-style: none;
+}
+
+.voucher-list__item {
+  display: flex;
+  justify-content: center;
+}
+
+.voucher {
+  width: 350px;
+}
+
+.voucher__card {
+  @include bg-gradient();
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: $space-md;
+}
+
+.voucher__icon {
+  font-size: 12rem;
+  color: #ffffff;
+}
+
+.voucher__credit {
+  font-size: $text-4xl;
+  font-weight: $weight-bold;
+  color: #ffffff;
+  position: absolute;
+  line-height: 1;
+  top: $space-sm;
+  right: $space-md;
+}
+
+.voucher__text-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $space-md;
+}
+
+.voucher__title {
+  color: $color-dark-grey-1;
+  font-size: $text-base;
+}
+
+.voucher__price {
+  color: $color-dark-grey-1;
+  font-size: $text-base;
+  font-weight: $weight-bold;
+}

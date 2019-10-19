@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/6418af7e97.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
@@ -50,7 +54,27 @@
       onload="active = 'vouchers'"
     ></div>
 
-    <main></main>
+    <main>
+      <section class="section section--vouchers">
+        <ul class="voucher-list">
+          <li class="voucher-list__item">
+            <div class="voucher">
+              <div class="voucher__card">
+                <i class="voucher__icon fab fa-apple"></i>
+                <span class="voucher__credit">£25</span>
+              </div>
+              <div class="voucher__text-box">
+                <h2 class="voucher__title">£25 Apple Store Credit</h2>
+                <span class="voucher__price">£25</span>
+              </div>
+              <button class="voucher__button button button--primary">
+                Add to Basket
+              </button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <div ng-include="'../components/footer.html'"></div>
 

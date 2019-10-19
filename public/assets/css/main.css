@@ -318,6 +318,93 @@ h6 {
   margin-bottom: 3.2rem;
 }
 
+.voucher-list {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.6rem;
+  list-style: none;
+}
+
+@media only screen and (max-width: 1240px) {
+  .voucher-list {
+    width: 95%;
+  }
+}
+
+.voucher-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.voucher {
+  width: 350px;
+}
+
+.voucher__card {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
+  background-image: linear-gradient(to bottom right, #01bfb0, #174079);
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  border-radius: 1rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.voucher__icon {
+  font-size: 12rem;
+  color: #ffffff;
+}
+
+.voucher__credit {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  line-height: 1;
+  top: 1.2rem;
+  right: 1.6rem;
+}
+
+.voucher__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.voucher__title {
+  color: #292929;
+  font-size: 1.6rem;
+}
+
+.voucher__price {
+  color: #292929;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);
