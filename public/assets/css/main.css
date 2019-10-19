@@ -655,18 +655,6 @@ h6 {
   position: absolute;
   width: 100%;
   bottom: -1px;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-  display: block;
-}
-
-@media only screen and (max-width: 500px) {
-  .section__border {
-    -webkit-transform: translateX(-2px);
-            transform: translateX(-2px);
-    bottom: -1px;
-    width: 110%;
-  }
 }
 
 .section--features {
