@@ -3,6 +3,9 @@ body {
   font-weight: $weight-regular;
   font-size: $text-base;
   line-height: $line-height-small;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 p {

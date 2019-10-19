@@ -46,14 +46,18 @@
   display: inline-block;
   padding: 0;
   text-decoration: none;
-  color: $color-off-white-2;
+  color: $color-off-white-1;
   transition: color 0.3s ease-out;
   font-size: $text-sm;
 
   &:hover {
-    color: $color-off-white-1;
+    color: $color-white;
     background-color: transparent;
   }
+}
+
+.nav__link.active {
+  color: $color-white;
 }
 
 .nav__hamburger {

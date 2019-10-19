@@ -1,3 +1,20 @@
+.header {
+  @include bg-gradient();
+  position: relative;
+}
+
+.header__container {
+  @include container('lg');
+  text-align: center;
+}
+
+.header__title {
+  color: $color-off-white-1;
+  padding-top: $space-5xl;
+  // height of white border
+  padding-bottom: $space-5xl + 5rem;
+}
+
 // Large Header - Used on home and contact page
 
 .header--lg {
