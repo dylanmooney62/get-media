@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>GetMedia</title>
+    <title>Search</title>
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./assets/icons/favicon.ico"
+      href="../assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <!-- materialize -->
@@ -26,248 +26,27 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
-  <body>
-    <header class="header--lg">
-      <img
-        src="assets/images/background.svg"
-        class="header--lg__bg"
-        aria-hidden="true"
-      />
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--hamburger js-menu">
-            <div
-              href="#"
-              data-target="slide-out"
-              class="nav__hamburger"
-              role="button"
-            >
-              <i class="menu__icon material-icons">
-                menu
-              </i>
-            </div>
-          </li>
-          <li class="nav__item nav__item--logo">
-            <a href="#/!" class="nav__link">
-              <div class="logo">
-                <img
-                  src="./assets/icons/logo-white.svg"
-                  class="logo__icon material-icons"
-                />
-                <span class="logo__text">GetMedia</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__list">
-          <li class="nav__item nav__item--link">
-            <a href="./pages/search.html" class="nav__link">Search</a>
-          </li>
-          <li class="nav__item nav__item--link">
-            <a href="vouchers.html" class="nav__link">Vouchers</a>
-          </li>
-          <li class="nav__item nav__item--link">
-            <a href="contact.html" class="nav__link">Contact</a>
-          </li>
-          <li class="nav__item nav__item--link">
-            <a href="#" class="nav__link">Log In</a>
-          </li>
-          <li class="nav__item nav__item--link">
-            <a href="#" class="nav__link">Sign Up</a>
-          </li>
-          <li class="nav__item nav__item--basket">
-            <div class="basket">
-              <i class="basket__icon material-icons" role="button">
-                shopping_basket
-              </i>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!-- side-navigation -->
-      <ul id="slide-out" class="sidenav">
-        <li class="sidenav__item sidenav__item--active">
-          <a
-            href="index.html"
-            class="sidenav__link waves-effect sidenav__link waves-primary"
-          >
-            Home
-          </a>
-        </li>
-        <li class="sidenav__item">
-          <a
-            href="search.html"
-            class="sidenav__link waves-effect sidenav__link waves-primary"
-          >
-            Search
-          </a>
-        </li>
-        <li class="sidenav__item">
-          <a
-            href="vouchers.html"
-            class="sidenav__link waves-effect sidenav__link waves-primary"
-          >
-            Vouchers
-          </a>
-        </li>
-        <li class="sidenav__item">
-          <a
-            href="contact.html"
-            class="sidenav__link waves-effect sidenav__link waves-primary"
-          >
-            Contact
-          </a>
-        </li>
-        <li class="sidenav__item">
-          <a href="#" class="sidenav__link waves-effect waves-primary">
-            Log In
-          </a>
-        </li>
-        <li class="sidenav__item">
-          <a href="#" class="sidenav__link waves-effect waves-primary">
-            Sign up
-          </a>
-        </li>
-      </ul>
-
-      <div class="header--lg__content">
-        <div class="header--lg__text-box">
-          <h1 class="header--lg__title heading-1">GetMedia</h1>
-          <p class="header--lg__text">
-            We are GetMedia, the best provider of free media content across the
-            globe.
-          </p>
-          <a href="search.html" class="button button--primary">Search Media</a>
-        </div>
-        <img
-          class="header--lg__illustration"
-          src="./assets/images/compose-music.svg"
-          alt="composing music"
-        />
-      </div>
-      <img
-        class="wave-border"
-        src="./assets/images/wave-border.svg"
-        aria-hidden="true"
-      />
+  <body ng-app="app">
+    <header class="header">
+      <div
+        ng-controller="navCtrl"
+        ng-include="'../components/navigation.html'"
+      ></div>
     </header>
 
-    <main>
-      <section class="section section--features">
-        <h2 class="heading-2">Unlimited Media, Wherever you are</h2>
-        <div class="feature-list">
-          <li class="feature-list__item">
-            <div class="feature">
-              <img
-                src="./assets/images/moon-landing.svg"
-                alt="illustration of astronaut landing on moon"
-                class="feature__img"
-              />
-              <h3 class="feature__title heading-3">World Wide</h3>
-              <p class="feature__text">
-                We offer the largest selection of media content across the
-                globe.
-              </p>
-            </div>
-          </li>
-          <li class="feature-list__item">
-            <div class="feature">
-              <img
-                src="./assets/images/music-app.svg"
-                class="feature__img"
-                alt="illustration of women dancing next to mobile device displaying music player app"
-              />
-              <h3 class="feature__title heading-3">Anytime, Anywhere</h3>
-              <p class="feature__text">
-                Stream anytime and anywhere using your mobile device
-              </p>
-            </div>
-          </li>
-          <li class="feature-list__item">
-            <div class="feature">
-              <img
-                src="./assets/images/social.svg"
-                class="feature__img"
-                alt="illustration of women sitting beside large mobile device displaying social media apps"
-              />
-              <h3 class="feature__title heading-3">Sharing is caring</h3>
-              <p class="feature__text">
-                Found something you love? Easily share it with your friends
-              </p>
-            </div>
-          </li>
-        </div>
-      </section>
-      <section class="section section--info">
-        <div class="info-banner">
-          <img
-            src="./assets/images/imagination.svg"
-            class="info-banner__img"
-            alt="illustration of women wearing headphones looking of into the distance"
-          />
-          <div class="info-banner__text-box">
-            <h2 class="info-banner__title heading-2">
-              Millions of tracks, at your finger tips
-            </h2>
-            <p class="info-banner__text">
-              At GetMedia we have the largest selection of media content
-              available across the globe.
-            </p>
-            <a href="search.html" class="button button--tertiary"
-              >Search Media</a
-            >
-          </div>
-        </div>
-        <img
-          class="wave-border"
-          src="./assets/images/wave-border.svg"
-          aria-hidden="true"
-        />
-      </section>
-      <section class="section section--cta">
-        <h2 class="section__title heading-2">Get Started</h2>
-        <p class="section__text">
-          Start searching millions of media content right now.
-        </p>
-        <a href="search.html" class="button button--primary button--large"
-          >Get Started</a
-        >
-      </section>
-    </main>
-    <footer class="footer">
-      <nav class="footer__nav">
-        <div class="footer__logo">
-          <a href="index.html" class="footer__link">
-            <img src="./assets/icons/logo-primary.svg" alt="GetMedia Logo" />
-          </a>
-        </div>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="./pages/search.html" class="footer__link">Search</a>
-          </li>
-          <li class="footer__item">
-            <a href="./pages/vouchers.html" class="footer__link">Vouchers</a>
-          </li>
-          <li class="footer__item">
-            <a href="./pages/contact.html" class="footer__link">Contact</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Log in</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Sign up</a>
-          </li>
-        </ul>
-      </nav>
-      <p class="footer__copyright">
-        <small>GetMedia &copy; 2019</small>
-      </p>
-    </footer>
+    <div
+      ng-include="'../components/sidenav.html'"
+      onload="active = 'vouchers'"
+    ></div>
+
+    <main></main>
+
+    <div ng-include="'../components/footer.html'"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="../assets/js/index.js" type="module"></script>
   </body>
 </html>
