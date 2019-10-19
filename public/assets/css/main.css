@@ -496,12 +496,6 @@ h6 {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .footer {
-    padding-top: 3.2rem;
-  }
-}
-
 .footer__nav {
   background-color: transparent;
   -webkit-box-shadow: none;
