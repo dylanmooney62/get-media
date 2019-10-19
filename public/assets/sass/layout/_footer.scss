@@ -62,10 +62,7 @@
 
 .footer__logo {
   fill: $color-primary;
-
-  @media only screen and (max-width: 700px) {
-    margin-bottom: $space-sm;
-  }
+  margin-bottom: $space-md;
 }
 
 .footer__copyright {
