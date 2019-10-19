@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- materialize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body ng-app="app">
+    <header class="header">
+      <div
+        ng-controller="navCtrl"
+        ng-include="'../components/navigation.html'"
+      ></div>
+    </header>
+
+    <div
+      ng-include="'../components/sidenav.html'"
+      onload="active = 'search'"
+    ></div>
+
+    <main></main>
+
+    <div ng-include="'../components/footer.html'"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../assets/js/index.js" type="module"></script>
+  </body>
+</html>
