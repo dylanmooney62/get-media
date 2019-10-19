@@ -8,11 +8,11 @@
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
   }
+}
 
-  &__item:not(:last-child) {
-    @media only screen and (max-width: 1000px) {
-      margin-bottom: $space-4xl;
-    }
+.feature-list__item:not(:last-child) {
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: $space-4xl;
   }
 }
 
@@ -26,35 +26,34 @@
   @media only screen and (max-width: 700px) {
     max-width: 50vw;
   }
+}
 
-  &__img {
-    margin-bottom: $space-2xl;
-    max-height: 20rem;
+.feature__img {
+  margin-right: auto;
+  display: block;
+  margin-bottom: $space-2xl;
+  max-height: 20rem;
 
-    @media only screen and (max-width: 1000px) {
-      max-height: unset;
-      width: 100%;
-    }
-
-    margin-right: auto;
-    display: block;
+  @media only screen and (max-width: 1000px) {
+    max-height: unset;
+    width: 100%;
   }
+}
 
-  &__title {
-    margin-bottom: $space-lg;
-    text-align: left;
+.feature__title {
+  margin-bottom: $space-lg;
+  text-align: left;
 
-    @media only screen and (max-width: 1000px) {
-      text-align: center;
-    }
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
   }
+}
 
-  &__text {
-    text-align: left;
-    line-height: 1.7;
+.feature__text {
+  text-align: left;
+  line-height: 1.7;
 
-    @media only screen and (max-width: 1000px) {
-      text-align: center;
-    }
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
   }
 }

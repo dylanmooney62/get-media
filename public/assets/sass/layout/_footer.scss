@@ -1,79 +1,77 @@
 .footer {
   @include container('lg');
-  padding-top: $space-lg;
-  padding-bottom: $space-md;
+  margin-bottom: $space-md;
   border-top: 0.1rem solid $color-light-grey-3;
 
   @media only screen and (max-width: 1000px) {
     padding-top: $space-xl;
   }
+}
 
-  &__nav {
-    background-color: transparent;
-    box-shadow: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: unset;
+.footer__nav {
+  background-color: transparent;
+  box-shadow: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: unset;
 
-    @media only screen and (max-width: 1000px) {
-      flex-direction: column-reverse;
-    }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+
+  padding: $space-xl 0;
+
+  @media only screen and (max-width: 1000px) {
+    max-width: 80%;
+    margin: 0 auto;
+    transform: translateX(-0.7rem);
   }
 
-  &__list {
-    display: flex;
-    justify-content: space-between;
-
-    @media only screen and (max-width: 1000px) {
-      max-width: 80%;
-      margin: 0 auto;
-      margin-bottom: $space-md;
-
-      transform: translateX(-0.7rem);
-    }
-
-    @media only screen and (max-width: 700px) {
-      max-width: 90%;
-      padding: $space-lg 0;
-    }
+  @media only screen and (max-width: 700px) {
+    max-width: 90%;
   }
+}
 
-  &__item {
-    padding: unset;
+.footer__item {
+  padding: unset;
+}
 
-    &:not(:last-child) {
-      margin-right: $space-3xl !important;
+.footer__item:not(:last-child) {
+  margin-right: $space-3xl !important;
 
-      @media only screen and (max-width: 700px) {
-        margin-right: $space-2xl !important;
-      }
-    }
+  @media only screen and (max-width: 700px) {
+    margin-right: $space-2xl !important;
   }
+}
 
-  &__link {
-    display: block;
-    color: $color-light-grey-1;
-    padding: 0;
-    line-height: 1;
-    font-size: $text-sm;
-    transition: 0.3s color ease-out;
+.footer__link {
+  display: block;
+  color: $color-light-grey-1;
+  padding: 0;
+  line-height: 1;
+  font-size: $text-sm;
+  transition: 0.3s color ease-out;
 
-    &:hover {
-      background: unset;
-      color: $color-dark-grey-2;
-    }
+  &:hover {
+    background: unset;
+    color: $color-dark-grey-2;
   }
+}
 
-  &__logo {
-    fill: $color-primary;
+.footer__logo {
+  fill: $color-primary;
 
-    @media only screen and (max-width: 700px) {
-      margin-bottom: $space-sm;
-    }
+  @media only screen and (max-width: 700px) {
+    margin-bottom: $space-sm;
   }
+}
 
-  &__copyright {
-    text-align: center;
-  }
+.footer__copyright {
+  text-align: center;
 }

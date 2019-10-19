@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   color: $color-white;
+}
 
-  &__icon {
-    margin-right: $space-xs;
-    font-size: 32px;
-    transform: translateY(-0.1rem);
-  }
+.logo__icon {
+  margin-right: $space-xs;
+  font-size: 32px;
+  transform: translateY(-0.1rem);
+}
 
-  &__text {
-    font-weight: $weight-bold;
-    font-size: $text-lg;
-  }
+.logo__text {
+  font-weight: $weight-bold;
+  font-size: $text-lg;
 }

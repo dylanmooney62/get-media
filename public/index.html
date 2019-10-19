@@ -29,12 +29,16 @@
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
-    <header class="header header--lg">
-      <img class="header__bg" src="./assets/images/background.svg" />
+    <header class="header--lg">
+      <img
+        src="assets/images/background.svg"
+        class="header--lg__bg"
+        aria-hidden="true"
+      />
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item nav__item--menu js-menu">
-            <a
+          <li class="nav__item nav__item--hamburger js-menu">
+            <div
               href="#"
               data-target="slide-out"
               class="nav__hamburger"
@@ -43,7 +47,7 @@
               <i class="menu__icon material-icons">
                 menu
               </i>
-            </a>
+            </div>
           </li>
           <li class="nav__item nav__item--logo">
             <a href="#/!" class="nav__link">
@@ -85,45 +89,68 @@
       <!-- side-navigation -->
       <ul id="slide-out" class="sidenav">
         <li class="sidenav__item sidenav__item--active">
-          <a href="index.html" class="waves-effect waves-primary">Home</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="search.html" class="waves-effect waves-primary">Search</a>
-        </li>
-        <li class="sidenav__item">
-          <a href="vouchers.html" class="waves-effect waves-primary"
-            >Vouchers</a
+          <a
+            href="index.html"
+            class="sidenav__link waves-effect sidenav__link waves-primary"
           >
+            Home
+          </a>
         </li>
         <li class="sidenav__item">
-          <a href="contact.html" class="waves-effect waves-primary">Contact</a>
+          <a
+            href="search.html"
+            class="sidenav__link waves-effect sidenav__link waves-primary"
+          >
+            Search
+          </a>
         </li>
         <li class="sidenav__item">
-          <a href="#" class="waves-effect waves-primary">Log In</a>
+          <a
+            href="vouchers.html"
+            class="sidenav__link waves-effect sidenav__link waves-primary"
+          >
+            Vouchers
+          </a>
         </li>
         <li class="sidenav__item">
-          <a href="#" class="waves-effect waves-primary">Sign up</a>
+          <a
+            href="contact.html"
+            class="sidenav__link waves-effect sidenav__link waves-primary"
+          >
+            Contact
+          </a>
+        </li>
+        <li class="sidenav__item">
+          <a href="#" class="sidenav__link waves-effect waves-primary">
+            Log In
+          </a>
+        </li>
+        <li class="sidenav__item">
+          <a href="#" class="sidenav__link waves-effect waves-primary">
+            Sign up
+          </a>
         </li>
       </ul>
 
-      <div class="header__content">
-        <div class="header__text-box">
-          <h1 class="header__title heading-1">GetMedia</h1>
-          <p class="header__text">
+      <div class="header--lg__content">
+        <div class="header--lg__text-box">
+          <h1 class="header--lg__title heading-1">GetMedia</h1>
+          <p class="header--lg__text">
             We are GetMedia, the best provider of free media content across the
             globe.
           </p>
           <a href="search.html" class="button button--primary">Search Media</a>
         </div>
         <img
-          class="header__illustration"
+          class="header--lg__illustration"
           src="./assets/images/compose-music.svg"
           alt="composing music"
         />
       </div>
       <img
-        class="header__border u-wave-border"
-        src="./assets/images/white-border.svg"
+        class="wave-border"
+        src="./assets/images/wave-border.svg"
+        aria-hidden="true"
       />
     </header>
 
@@ -191,7 +218,11 @@
             >
           </div>
         </div>
-        <img class="section__border" src="./assets/images/white-border.svg" />
+        <img
+          class="wave-border"
+          src="./assets/images/wave-border.svg"
+          aria-hidden="true"
+        />
       </section>
       <section class="section section--cta">
         <h2 class="section__title heading-2">Get Started</h2>
