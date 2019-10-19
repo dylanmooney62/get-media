@@ -35,7 +35,6 @@
   <body ng-app="app">
     <header class="header">
       <div
-        ng-controller="navCtrl"
         ng-include="'../components/navigation.html'"
         onload="active = 'vouchers'"
       ></div>
@@ -67,7 +66,10 @@
                 <h2 class="voucher__title">{{ voucher.title }}</h2>
                 <span class="voucher__price">£{{ voucher.cost }}</span>
               </div>
-              <button class="voucher__button button button--primary">
+              <button
+                ng-click="addToBasket(voucher)"
+                class="voucher__button button button--primary"
+              >
                 Add to Basket
               </button>
             </div>

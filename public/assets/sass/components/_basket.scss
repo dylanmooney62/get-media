@@ -1,7 +1,4 @@
-.basket {
-}
-
-.basket__icon {
+.basket-icon {
   color: $color-white;
   cursor: pointer;
   transition: all 0.3s ease-out;
@@ -9,4 +6,18 @@
   &:hover {
     color: $color-off-white-1;
   }
+}
+
+.basket {
+  position: absolute;
+  height: 40rem;
+  width: 27.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  right: 50%;
+  top: $space-3xl;
+  z-index: 300;
+  box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07),
+    0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
+  transform: translateX(50%);
 }

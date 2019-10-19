@@ -140,15 +140,30 @@ h6 {
   font-size: 1.8rem;
 }
 
-.basket__icon {
+.basket-icon {
   color: #ffffff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-.basket__icon:hover {
+.basket-icon:hover {
   color: rgba(255, 255, 255, 0.95);
+}
+
+.basket {
+  position: absolute;
+  height: 40rem;
+  width: 27.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  right: 50%;
+  top: 6.4rem;
+  z-index: 300;
+  -webkit-box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .feature-list {
@@ -357,7 +372,7 @@ h6 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);
   width: 100%;
-  height: 220px;
+  height: 22rem;
   background-size: cover;
   border-radius: 1rem;
   position: relative;
@@ -589,7 +604,7 @@ h6 {
           box-shadow: none;
   line-height: 1;
   position: relative;
-  z-index: 100;
+  z-index: 200;
 }
 
 @media only screen and (max-width: 1240px) {
@@ -635,6 +650,10 @@ h6 {
   .nav__item--logo {
     display: none;
   }
+}
+
+.nav__item--basket {
+  position: relative;
 }
 
 .nav__link:link,

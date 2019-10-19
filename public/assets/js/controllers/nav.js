@@ -1,4 +1,4 @@
-export default function($scope) {
+export default function($scope, $rootScope) {
   $scope.$on('$includeContentLoaded', function(event, templateName) {
     const nav = document.querySelector('.sidenav');
     const navigation = M.Sidenav.init(nav, {

@@ -1,4 +1,4 @@
-<nav class="nav">
+<nav ng-controller="navCtrl" class="nav">
   <ul class="nav__list">
     <li class="nav__item nav__item--hamburger js-menu">
       <div
@@ -60,11 +60,10 @@
       </a>
     </li>
     <li class="nav__item nav__item--basket">
-      <div class="basket">
-        <i class="basket__icon material-icons" role="button">
-          shopping_basket
-        </i>
-      </div>
+      <i class="basket-icon material-icons" role="button">
+        shopping_basket
+      </i>
+      <div ng-include="'../components/basket.html'"></div>
     </li>
   </ul>
 </nav>

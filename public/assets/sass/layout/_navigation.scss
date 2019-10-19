@@ -8,7 +8,7 @@
   box-shadow: none;
   line-height: 1;
   position: relative;
-  z-index: 100;
+  z-index: 200;
 }
 
 .nav__list {
@@ -39,6 +39,10 @@
   @media only screen and (max-width: 1240px) {
     display: none;
   }
+}
+
+.nav__item--basket {
+  position: relative;
 }
 
 .nav__link:link,

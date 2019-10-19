@@ -1,4 +1,4 @@
-export default function($scope) {
+export default function($scope, $rootScope) {
   $scope.vouchers = [
     { id: 0, title: 'Apple Store Credit', credit: 10, cost: 10 },
     { id: 1, title: 'Apple Store Credit', credit: 25, cost: 25 },
@@ -7,4 +7,8 @@ export default function($scope) {
     { id: 4, title: 'Apple Store Credit', credit: 75, cost: 75 },
     { id: 5, title: 'Apple Store Credit', credit: 100, cost: 100 },
   ];
+
+  $scope.addToBasket = function(item) {
+    $rootScope.$emit('addedToBasket', item);
+  };
 }
