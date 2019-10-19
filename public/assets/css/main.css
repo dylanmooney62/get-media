@@ -324,8 +324,12 @@ h6 {
   max-width: 120rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(35rem, 35rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 35rem));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-gap: 6.4rem;
   list-style: none;
 }

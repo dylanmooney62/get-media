@@ -1,7 +1,9 @@
 .voucher-list {
   @include container('lg');
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 35rem));
+  justify-content: center;
   grid-gap: $space-3xl;
   list-style: none;
 }
