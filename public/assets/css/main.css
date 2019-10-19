@@ -253,7 +253,7 @@ h6 {
   display: block;
   width: 100%;
   bottom: -0.3rem;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .info-banner {
@@ -548,10 +548,11 @@ h6 {
   display: inline-block;
   padding: 0;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(255, 255, 255, 0.74);
   -webkit-transition: color 0.3s ease-out;
   transition: color 0.3s ease-out;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .nav__link:link:hover,
@@ -560,7 +561,8 @@ h6 {
   background-color: transparent;
 }
 
-.nav__link.active {
+.nav__link:link.active,
+.nav__link:visited.active {
   color: #ffffff;
 }
 

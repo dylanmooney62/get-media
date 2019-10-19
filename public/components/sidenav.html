@@ -1,5 +1,5 @@
 <ul id="slide-out" class="sidenav">
-  <li class="sidenav__item {{ active === 'home' && 'active' }}">
+  <li class="sidenav__item {{ active === 'home' ? 'active' : '' }}">
     <a
       href="index.html"
       class="sidenav__link waves-effect sidenav__link waves-primary"
@@ -7,7 +7,7 @@
       Home
     </a>
   </li>
-  <li class="sidenav__item {{ active === 'search' && 'active' }}">
+  <li class="sidenav__item {{ active === 'search' ? 'active' : '' }}">
     <a
       href="search.html"
       class="sidenav__link waves-effect sidenav__link waves-primary"
@@ -15,7 +15,7 @@
       Search
     </a>
   </li>
-  <li class="sidenav__item {{ active === 'vouchers' && 'active' }}">
+  <li class="sidenav__item {{ active === 'vouchers' ? 'active' : '' }}">
     <a
       href="vouchers.html"
       class="sidenav__link waves-effect sidenav__link waves-primary"
@@ -23,7 +23,7 @@
       Vouchers
     </a>
   </li>
-  <li class="sidenav__item {{ active === 'contact' && 'active' }}">
+  <li class="sidenav__item {{ active === 'contact' ? 'active' : '' }}">
     <a
       href="contact.html"
       class="sidenav__link waves-effect sidenav__link waves-primary"
@@ -31,7 +31,7 @@
       Contact
     </a>
   </li>
-  <li class="sidenav__item {{ active === 'login' && 'active' }}">
+  <li class="sidenav__item {{ active === 'login' ? 'active' : '' }}">
     <a href="#" class="sidenav__link waves-effect waves-primary">
       Log In
     </a>
