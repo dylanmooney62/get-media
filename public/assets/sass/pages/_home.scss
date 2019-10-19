@@ -3,7 +3,6 @@
   max-height: 90rem;
   min-height: 70rem;
   position: relative;
-  overflow: hidden;
 
   @media only screen and (max-width: 1000px) {
     @include bg-gradient();
@@ -11,8 +10,8 @@
 
   &__bg {
     position: absolute;
-    right: 0px;
-    z-index: -10;
+    width: 100%;
+    z-index: -100;
 
     @media only screen and (max-width: 1000px) {
       display: none;
