@@ -35,6 +35,7 @@
 
     @media only screen and (max-width: 700px) {
       max-width: 90%;
+      padding: $space-lg 0;
     }
   }
 
@@ -46,10 +47,6 @@
 
       @media only screen and (max-width: 700px) {
         margin-right: $space-2xl !important;
-      }
-
-      @media only screen and (max-width: 500px) {
-        margin-right: $space-xl !important;
       }
     }
   }
@@ -65,6 +62,14 @@
     &:hover {
       background: unset;
       color: $color-dark-grey-2;
+    }
+  }
+
+  &__logo {
+    fill: $color-primary;
+
+    @media only screen and (max-width: 700px) {
+      margin-bottom: $space-sm;
     }
   }
 

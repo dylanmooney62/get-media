@@ -1,9 +1,11 @@
 .basket {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
   &__icon {
     color: $color-white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: $color-off-white-1;
+    }
   }
 }
