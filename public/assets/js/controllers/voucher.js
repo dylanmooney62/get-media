@@ -9,7 +9,6 @@ export default function($scope, $rootScope) {
   ];
 
   $scope.addToBasket = function(item) {
-    console.log(item);
     $rootScope.$emit('addedToBasket', item);
   };
 }
