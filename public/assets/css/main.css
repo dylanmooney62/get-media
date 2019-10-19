@@ -664,6 +664,7 @@ h6 {
   font-size: 1.4rem;
   -webkit-transition: 0.3s color ease-out;
   transition: 0.3s color ease-out;
+  font-weight: 600;
 }
 
 .footer__link:hover {

@@ -53,6 +53,7 @@
   line-height: 1;
   font-size: $text-sm;
   transition: 0.3s color ease-out;
+  font-weight: $weight-semibold;
 
   &:hover {
     background: unset;
