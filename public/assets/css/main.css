@@ -253,6 +253,68 @@ h6 {
   z-index: 1000;
 }
 
+.info-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .info-banner {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-banner {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.info-banner__text-box {
+  margin-left: 9.6rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-banner__text-box {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .info-banner__img {
+    display: none;
+  }
+}
+
+.info-banner__title {
+  margin-bottom: 1.6rem;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.info-banner__text {
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 3.2rem;
+}
+
 .header--lg {
   height: 90vh;
   max-height: 90rem;
@@ -629,57 +691,6 @@ h6 {
   overflow: hidden;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);
-}
-
-.section--info .section__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 110rem;
-}
-
-@media only screen and (max-width: 1240px) {
-  .section--info .section__container {
-    width: 95%;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .section--info .section__container {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .section--info .section__img {
-    display: none;
-  }
-}
-
-.section--info .heading-2 {
-  margin-bottom: 1.6rem;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-.section--info .section__text-box {
-  margin-left: 9.6rem;
-}
-
-@media only screen and (max-width: 1000px) {
-  .section--info .section__text-box {
-    margin-left: 0;
-    width: 90%;
-  }
-}
-
-.section--info p {
-  color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 3.2rem;
 }
 
 .section--cta {

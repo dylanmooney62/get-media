@@ -1,0 +1,38 @@
+.info-banner {
+  display: flex;
+  align-items: center;
+  @include container('md');
+
+  @media only screen and (max-width: 1000px) {
+    display: block;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.info-banner__text-box {
+  margin-left: $space-4xl;
+  @media only screen and (max-width: 1000px) {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.info-banner__img {
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.info-banner__title {
+  margin-bottom: $space-md;
+  color: $color-off-white-1;
+}
+
+.info-banner__text {
+  color: $color-off-white-1;
+  margin-bottom: $space-xl;
+}

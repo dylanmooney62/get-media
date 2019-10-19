@@ -11,40 +11,6 @@
   position: relative;
   overflow: hidden;
   @include bg-gradient();
-
-  .section__container {
-    display: flex;
-    align-items: center;
-    @include container('md');
-
-    @media only screen and (max-width: 1000px) {
-      display: block;
-    }
-  }
-
-  .section__img {
-    @media only screen and (max-width: 1000px) {
-      display: none;
-    }
-  }
-
-  .heading-2 {
-    margin-bottom: $space-md;
-    color: $color-off-white-1;
-  }
-
-  .section__text-box {
-    margin-left: $space-4xl;
-    @media only screen and (max-width: 1000px) {
-      margin-left: 0;
-      width: 90%;
-    }
-  }
-
-  p {
-    color: $color-off-white-1;
-    margin-bottom: $space-xl;
-  }
 }
 
 .section--cta {
