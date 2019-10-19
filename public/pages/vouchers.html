@@ -56,16 +56,16 @@
 
     <main>
       <section class="section section--vouchers">
-        <ul class="voucher-list">
-          <li class="voucher-list__item">
+        <ul ng-controller="voucherCtrl" class="voucher-list">
+          <li ng-repeat="voucher in vouchers" class="voucher-list__item">
             <div class="voucher">
               <div class="voucher__card">
                 <i class="voucher__icon fab fa-apple"></i>
-                <span class="voucher__credit">£25</span>
+                <span class="voucher__credit">£{{ voucher.credit }}</span>
               </div>
               <div class="voucher__text-box">
-                <h2 class="voucher__title">£25 Apple Store Credit</h2>
-                <span class="voucher__price">£25</span>
+                <h2 class="voucher__title">{{ voucher.title }}</h2>
+                <span class="voucher__price">£{{ voucher.cost }}</span>
               </div>
               <button class="voucher__button button button--primary">
                 Add to Basket

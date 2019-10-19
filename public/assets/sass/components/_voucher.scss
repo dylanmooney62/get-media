@@ -1,8 +1,8 @@
 .voucher-list {
-  @include container('md');
+  @include container('lg');
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: $space-md;
+  grid-gap: $space-3xl;
   list-style: none;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .voucher {
-  width: 350px;
+  width: 35rem;
 }
 
 .voucher__card {
@@ -45,17 +45,18 @@
 
 .voucher__text-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: $space-md;
 }
 
 .voucher__title {
   color: $color-dark-grey-1;
-  font-size: $text-base;
+  font-size: $text-lg;
 }
 
 .voucher__price {
   color: $color-dark-grey-1;
-  font-size: $text-base;
   font-weight: $weight-bold;
+  font-size: $text-lg;
 }
