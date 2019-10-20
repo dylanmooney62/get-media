@@ -1,8 +1,6 @@
 export default function($scope, $rootScope) {
   $scope.basket = [];
 
-  console.log($scope.basket);
-
   $rootScope.$on('addedToBasket', function(event, item) {
     $scope.addItem(item);
   });

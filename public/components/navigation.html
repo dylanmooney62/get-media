@@ -59,11 +59,11 @@
         Sign Up
       </a>
     </li>
-    <li class="nav__item nav__item--basket">
+    <li ng-click="showBasket = !showBasket" class="nav__item nav__item--basket">
       <i class="basket-icon material-icons" role="button">
         shopping_basket
       </i>
-      <div ng-include="'../components/basket.html'"></div>
+      <div ng-show="showBasket" ng-include="'../components/basket.html'"></div>
     </li>
   </ul>
 </nav>
