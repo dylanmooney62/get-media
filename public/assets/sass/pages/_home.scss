@@ -11,6 +11,7 @@
   position: relative;
   overflow: hidden;
   @include bg-gradient();
+  background-attachment: fixed;
 }
 
 .section--cta {
