@@ -118,6 +118,10 @@ h6 {
   padding: 1.6rem 4.8rem;
 }
 
+.button--bloack {
+  display: block;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +159,13 @@ h6 {
   position: absolute;
   height: 40rem;
   width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   border-radius: 0.5rem;
   background-color: white;
   color: #292929;
@@ -171,14 +182,30 @@ h6 {
 .basket__list {
   width: 100%;
   list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-x: auto;
+  margin-bottom: 1.6rem;
 }
 
 .basket__item {
   width: 100%;
+  margin-bottom: 1.6rem;
 }
 
-.basket__item:not(:last-child) {
+.basket__total {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 600;
   margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+}
+
+.basket__total-title {
+  margin-right: 0.8rem;
 }
 
 .feature-list {

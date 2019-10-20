@@ -4,22 +4,23 @@
       <div class="basket-item">
         <img
           class="basket-item__img"
-          src="../assets/images/shop/{{ item.id }}.png"
-          alt=""
+          ng-src="../assets/images/shop/{{ item.id }}.png"
+          alt="{{ item.title }}"
         />
         <div class="basket-item__info">
           <p class="basket-item__title">{{ item.title }}</p>
           <div class="basket-item__form">
             <span class="basket-item__quantity">{{ item.quantity }}</span>
             <span>&times;</span>
-            <span class="basket-item__price">{{ item.price }}</span>
+            <span class="basket-item__price">£{{ item.price }}</span>
           </div>
         </div>
       </div>
     </li>
   </ul>
-  <!-- <dl class="basket__total">
-    <dt>Total:</dt>
-    <dd>£250</dd>
-  </dl> -->
+  <dl class="basket__total">
+    <dt class="basket__total-title">Basket Subtotal:</dt>
+    <dd class="basket__total-price">{{ getTotal() | currency: '£' }}</dd>
+  </dl>
+  <button class="button button--primary button--block">Checkout</button>
 </div>

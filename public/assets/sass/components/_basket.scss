@@ -12,6 +12,8 @@
   position: absolute;
   height: 40rem;
   width: 30rem;
+  display: flex;
+  flex-direction: column;
   border-radius: 0.5rem;
   background-color: white;
   color: $color-dark-grey-1;
@@ -27,12 +29,25 @@
 .basket__list {
   width: 100%;
   list-style: none;
+  flex: 1;
+  overflow-x: auto;
+  margin-bottom: $space-md;
 }
 
 .basket__item {
   width: 100%;
 
-  &:not(:last-child) {
-    margin-bottom: $space-md;
-  }
+  margin-bottom: $space-md;
+}
+
+.basket__total {
+  margin-left: auto;
+  display: flex;
+  font-weight: $weight-semibold;
+  margin-bottom: $space-md;
+  font-size: $text-sm;
+}
+
+.basket__total-title {
+  margin-right: $space-xs;
 }

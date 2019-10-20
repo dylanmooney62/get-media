@@ -1,6 +1,8 @@
 export default function($scope, $rootScope) {
   $scope.basket = [];
 
+  console.log($scope.basket);
+
   $rootScope.$on('addedToBasket', function(event, item) {
     $scope.addItem(item);
   });
@@ -20,5 +22,11 @@ export default function($scope, $rootScope) {
       // if item doesn't exist create copy of array and add itemToAdd with quanity 1
       $scope.basket = [...$scope.basket, { ...itemToAdd, quantity: 1 }];
     }
+  };
+
+  $scope.getTotal = function() {
+    return $scope.basket.reduce((total, { quantity, price }) => {
+      return total + quantity * price;
+    }, 0);
   };
 }
