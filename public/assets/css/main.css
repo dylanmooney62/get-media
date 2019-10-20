@@ -154,9 +154,11 @@ h6 {
 .basket {
   position: absolute;
   height: 40rem;
-  width: 27.5rem;
-  border-radius: 1rem;
+  width: 30rem;
+  border-radius: 0.5rem;
   background-color: white;
+  color: #292929;
+  padding: 2.4rem 1.6rem;
   right: 50%;
   top: 6.4rem;
   z-index: 300;
@@ -164,6 +166,19 @@ h6 {
           box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07), 0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
+}
+
+.basket__list {
+  width: 100%;
+  list-style: none;
+}
+
+.basket__item {
+  width: 100%;
+}
+
+.basket__item:not(:last-child) {
+  margin-bottom: 1.6rem;
 }
 
 .feature-list {
@@ -426,6 +441,35 @@ h6 {
   color: #292929;
   font-weight: 700;
   font-size: 1.8rem;
+}
+
+.basket-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.basket-item__img {
+  width: 10rem;
+  margin-right: 1.6rem;
+}
+
+.basket-item__info {
+  font-size: 1.4rem;
+  color: #292929;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.basket-item__title {
+  font-size: 1.4rem;
+  color: #292929;
+  margin-bottom: 0.8rem;
 }
 
 .header {

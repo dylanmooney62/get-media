@@ -1,0 +1,22 @@
+.basket-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.basket-item__img {
+  width: 10rem;
+  margin-right: $space-md;
+}
+
+.basket-item__info {
+  font-size: $text-sm;
+  color: $color-dark-grey-1;
+  flex: 1;
+}
+
+.basket-item__title {
+  font-size: $text-sm;
+  color: $color-dark-grey-1;
+  margin-bottom: $space-xs;
+}

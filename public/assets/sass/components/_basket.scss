@@ -11,13 +11,28 @@
 .basket {
   position: absolute;
   height: 40rem;
-  width: 27.5rem;
-  border-radius: 1rem;
+  width: 30rem;
+  border-radius: 0.5rem;
   background-color: white;
+  color: $color-dark-grey-1;
+  padding: $space-lg $space-md;
   right: 50%;
   top: $space-3xl;
   z-index: 300;
   box-shadow: 0 0.063em 0.313em 0 rgba(0, 0, 0, 0.07),
     0 0.438em 1.063em 0 rgba(0, 0, 0, 0.1);
   transform: translateX(50%);
+}
+
+.basket__list {
+  width: 100%;
+  list-style: none;
+}
+
+.basket__item {
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: $space-md;
+  }
 }

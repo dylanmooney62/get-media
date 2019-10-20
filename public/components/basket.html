@@ -1,1 +1,25 @@
-<div ng-controller="basketCtrl" class="basket"></div>
+<div ng-controller="basketCtrl" class="basket">
+  <ul class="basket__list">
+    <li ng-repeat="item in basket" class="basket__item">
+      <div class="basket-item">
+        <img
+          class="basket-item__img"
+          src="../assets/images/vouchers/apple-10.png"
+          alt=""
+        />
+        <div class="basket-item__info">
+          <p class="basket-item__title">{{ item.title }}</p>
+          <div class="basket-item__form">
+            <span class="basket-item__quantity">{{ item.quantity }}</span>
+            <span>&times;</span>
+            <span class="basket-item__price">{{ item.price }}</span>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- <dl class="basket__total">
+    <dt>Total:</dt>
+    <dd>£250</dd>
+  </dl> -->
+</div>
