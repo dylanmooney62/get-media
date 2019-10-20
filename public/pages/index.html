@@ -35,7 +35,7 @@
         class="header--lg__bg"
         aria-hidden="true"
       />
-      <div ng-include="'../components/navigation.html'"></div>
+      <div ng-include="'../includes/navigation.html'"></div>
 
       <div class="header--lg__content">
         <div class="header--lg__text-box">
@@ -61,10 +61,7 @@
       />
     </header>
 
-    <div
-      ng-include="'../components/sidenav.html'"
-      onload="active = 'home'"
-    ></div>
+    <div ng-include="'../includes/sidenav.html'" onload="active = 'home'"></div>
 
     <main>
       <section class="section section--features">
@@ -149,7 +146,7 @@
       </section>
     </main>
 
-    <div ng-include="'../components/footer.html'"></div>
+    <div ng-include="'../includes/footer.html'"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
