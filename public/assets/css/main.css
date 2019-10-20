@@ -419,6 +419,7 @@ h6 {
 .voucher__title {
   color: #292929;
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .voucher__price {
