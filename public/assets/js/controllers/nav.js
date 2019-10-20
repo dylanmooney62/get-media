@@ -1,4 +1,6 @@
 export default function($scope, $rootScope) {
+  $scope.showBasket = false;
+
   $scope.$on('$includeContentLoaded', function(event, templateName) {
     const nav = document.querySelector('.sidenav');
     const navigation = M.Sidenav.init(nav, {
@@ -8,5 +10,9 @@ export default function($scope, $rootScope) {
     document.querySelector('.js-menu').addEventListener('click', () => {
       navigation.open();
     });
+  });
+
+  $rootScope.$on('addedToBasket', function(event, item) {
+    $scope.showBasket = true;
   });
 }
