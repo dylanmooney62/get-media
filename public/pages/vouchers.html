@@ -64,7 +64,9 @@
               </div>
               <div class="voucher__text-box">
                 <h2 class="voucher__title">{{ voucher.title }}</h2>
-                <span class="voucher__price">£{{ voucher.price }}</span>
+                <span class="voucher__price">
+                  {{ voucher.price | currency: '£' }}
+                </span>
               </div>
               <button
                 ng-click="addToBasket(voucher)"

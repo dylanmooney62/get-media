@@ -12,7 +12,9 @@
           <div class="basket-item__form">
             <span class="basket-item__quantity">{{ item.quantity }}</span>
             <span>&times;</span>
-            <span class="basket-item__price">£{{ item.price }}</span>
+            <span class="basket-item__price">
+              {{ item.price | currency: '£' }}
+            </span>
           </div>
         </div>
       </div>
