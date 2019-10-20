@@ -12,7 +12,7 @@ export default function($scope, $rootScope) {
     });
   });
 
-  $rootScope.$on('addedToBasket', function(event, item) {
+  $rootScope.$on('addedToBasket', function() {
     $scope.showBasket = true;
   });
 }
