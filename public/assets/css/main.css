@@ -215,6 +215,7 @@ h6 {
   font-weight: 600;
   margin-bottom: 1.6rem;
   font-size: 1.4rem;
+  color: #3e3e3e;
 }
 
 .basket__total-title {
@@ -472,14 +473,14 @@ h6 {
 }
 
 .voucher__title {
-  color: #292929;
+  color: #3e3e3e;
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .voucher__price {
-  color: #292929;
-  font-weight: 700;
+  color: #3e3e3e;
+  font-weight: 600;
   font-size: 1.8rem;
 }
 

@@ -1,5 +1,5 @@
 export default function($scope, $rootScope) {
-  $scope.showBasket = true;
+  $scope.showBasket = false;
 
   $scope.$on('$includeContentLoaded', function(event, templateName) {
     const nav = document.querySelector('.sidenav');
