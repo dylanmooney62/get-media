@@ -1,8 +1,6 @@
 export default function($scope, $rootScope) {
   $scope.basket = [];
 
-  // TODO: SAVE BASKET DATA ON LOAD
-
   $rootScope.$on('addedToBasket', function(event, item) {
     $scope.addItem(item);
   });
