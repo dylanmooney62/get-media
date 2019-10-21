@@ -662,6 +662,11 @@ h6 {
   margin-bottom: 1.6rem;
 }
 
+.media__title,
+.media__subtitle {
+  margin-right: 1.2rem;
+}
+
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);

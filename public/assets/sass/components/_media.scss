@@ -18,3 +18,8 @@
 .media__text-box:last-of-type {
   margin-bottom: $space-md;
 }
+
+.media__title,
+.media__subtitle {
+  margin-right: $space-sm;
+}
