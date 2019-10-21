@@ -1,7 +1,5 @@
 export default function($scope, $rootScope) {
-  $scope.basket = [
-    { id: 2, title: 'Apple Store Credit', credit: 30, price: 30, quantity: 2 },
-  ];
+  $scope.basket = [];
 
   $rootScope.$on('addedToBasket', function(event, item) {
     $scope.addItem(item);
