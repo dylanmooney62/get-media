@@ -20,7 +20,7 @@ export default function($scope, $http) {
           if (data.resultCount > 0) {
             $scope.results = data.results;
           } else {
-            $scope.setMessage('No results found...');
+            $scope.setMessage('No results found.');
           }
 
           $scope.loading = false;
@@ -30,7 +30,7 @@ export default function($scope, $http) {
           $scope.loading = false;
         });
     } else {
-      $scope.setMessage('Start searching for media');
+      $scope.setMessage('Start searching for media.');
     }
   };
 
