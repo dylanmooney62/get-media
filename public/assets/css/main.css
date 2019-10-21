@@ -758,6 +758,10 @@ h6 {
   }
 }
 
+.pagination li.active {
+  background-color: #01bfb0;
+}
+
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);
@@ -1226,6 +1230,5 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 6.4rem;
-  min-height: 76.4rem;
 }
 /*# sourceMappingURL=main.css.map */
