@@ -22,11 +22,17 @@ export default function($scope, $rootScope) {
       // if item doesn't exist create copy of array and add itemToAdd with quanity 1
       $scope.basket = [...$scope.basket, { ...itemToAdd, quantity: 1 }];
     }
+
+    // save new basket to local storage
+    $scope.saveBasket();
   };
 
   $scope.removeItem = function(id) {
     // if id of item clicked is found it is removed from the array
     $scope.basket = $scope.basket.filter((item) => item.id !== id);
+
+    // save new basket to local storage
+    $scope.saveBasket();
   };
 
   $scope.getTotal = function() {
@@ -35,4 +41,21 @@ export default function($scope, $rootScope) {
       return total + quantity * price;
     }, 0);
   };
+
+  $scope.saveBasket = function() {
+    // removes items with quantity equal to 0 or less than 0
+    const filteredBasket = $scope.basket.filter((item) => item.quantity > 0);
+
+    if (window.localStorage) {
+      localStorage.setItem('basket', JSON.stringify(filteredBasket));
+    }
+  };
+
+  $scope.loadBasket = function() {
+    if (window.localStorage && localStorage.getItem('basket')) {
+      $scope.basket = JSON.parse(localStorage.getItem('basket'));
+    }
+  };
+
+  $scope.loadBasket();
 }

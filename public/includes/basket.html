@@ -17,7 +17,13 @@
           <p class="basket-item__title">{{ item.title }}</p>
           <div class="basket-item__form-group">
             <div class="basket-item__quantity input-field">
-              <input type="number" ng-model="item.quantity" min="0" required />
+              <input
+                type="number"
+                ng-model="item.quantity"
+                ng-change="saveBasket()"
+                min="1"
+                required
+              />
             </div>
             <div class="basket-item__accumulator">
               <i class="basket-item__times material-icons">

@@ -2,7 +2,7 @@ export default function($scope, $http) {
   $scope.results = [];
   $scope.loading = false;
   $scope.searchTerm = '';
-  $scope.message = 'Start searching for media';
+  $scope.message = 'Start searching for media.';
 
   $scope.search = function() {
     $scope.results = [];
