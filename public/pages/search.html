@@ -66,9 +66,13 @@
             </i>
           </div>
         </form>
-        <div ng-show="!loading">
+        <div ng-show="!loading" class="section--search__results">
           <ul ng-if="results.length" class="media-list">
-            <li ng-cloak ng-repeat="media in results" class="media-list__item">
+            <li
+              ng-cloak
+              dir-paginate="media in results | itemsPerPage: 8"
+              class="media-list__item"
+            >
               <div class="media">
                 <img
                   ng-src="{{ media.artworkUrl100 }}"
@@ -100,6 +104,9 @@
               </div>
             </li>
           </ul>
+          <div ng-if="results.length > 8" class="pagination">
+            <dir-pagination-controls></dir-pagination-controls>
+          </div>
           <div ng-if="!results.length" class="message-box">
             <img
               src="../assets/images/illustrations/search.svg"

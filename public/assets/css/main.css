@@ -617,7 +617,7 @@ h6 {
   width: 90%;
   max-width: 60rem;
   margin: 0 auto;
-  margin-bottom: 9.6rem;
+  margin-bottom: 4.8rem;
 }
 
 .search-bar__input {
@@ -656,6 +656,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-overflow: ellipsis;
 }
 
 .media__text-box:last-of-type {
@@ -665,6 +666,10 @@ h6 {
 .media__title,
 .media__subtitle {
   margin-right: 1.2rem;
+  width: 18rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .message-box {
@@ -1194,6 +1199,19 @@ h6 {
   }
 }
 
+.section--search__results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .media-list {
   width: 100%;
   display: -ms-grid;
@@ -1207,5 +1225,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 6.4rem;
+  min-height: 76.4rem;
 }
 /*# sourceMappingURL=main.css.map */

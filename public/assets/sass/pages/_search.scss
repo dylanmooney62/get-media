@@ -2,6 +2,12 @@
   @include container('lg');
 }
 
+.section--search__results {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .media-list {
   width: 100%;
   display: grid;
@@ -10,4 +16,7 @@
   grid-template-rows: auto;
   gap: $space-3xl;
   justify-content: center;
+  margin-bottom: $space-3xl;
+  // allows pagination to stay at bottom
+  min-height: 76.4rem;
 }

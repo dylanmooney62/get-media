@@ -1,10 +1,12 @@
+import './directives/dirPagination.js';
+
 import navCtrl from './controllers/nav.js';
 import sidenavCtrl from './controllers/sidenav.js';
 import shopCtrl from './controllers/shop.js';
 import basketCtrl from './controllers/basket.js';
 import searchCtrl from './controllers/search.js';
 
-var app = angular.module('app', []);
+var app = angular.module('app', ['angularUtils.directives.dirPagination']);
 
 app.controller('navCtrl', navCtrl);
 app.controller('sidenavCtrl', sidenavCtrl);
