@@ -1,12 +1,18 @@
 export default function($scope, $http) {
   $scope.results = [];
-  $scope.error = '';
   $scope.loading = false;
   $scope.searchTerm = '';
+  $scope.message = '';
 
   $scope.search = function() {
     $scope.results = [];
     $scope.loading = true;
+
+    // TODO: ADD LOADING SCREEN
+    // TODO: PLACEHOLDER WHEN RESULTS ARE FIRST EMPTY
+    // TODO: NO RESULTS FOUND MESSAGE IF RESULTS ARE EMPTY
+    // TODO: DISPLAY MESSAGES ON SCREEN
+    // TODO: PAGINATION
 
     $http
       .get(`https://itunes.apple.com/search?term=${$scope.searchTerm}`)
@@ -16,15 +22,12 @@ export default function($scope, $http) {
         $scope.loading = false;
       })
       .catch((error) => {
-        $scope.setError('Something went wrong... Please try again.');
+        $scope.setMessage('Something went wrong... Please try again.');
         $scope.loading = false;
       });
   };
 
-  $scope.setError = function(message) {
-    $scope.error = message;
-    setTimeout(() => {
-      $scope.error = '';
-    }, 3000);
+  $scope.setMessage = function(message) {
+    $scope.message = message;
   };
 }

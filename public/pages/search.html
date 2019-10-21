@@ -63,7 +63,7 @@
           </div>
         </form>
         <ul class="media-list">
-          <li ng-repeat="media in results" class="media-list__item">
+          <li ng-cloak ng-repeat="media in results" class="media-list__item">
             <div class="media">
               <img
                 ng-src="{{ media.artworkUrl100 }}"
