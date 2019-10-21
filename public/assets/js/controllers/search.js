@@ -2,29 +2,36 @@ export default function($scope, $http) {
   $scope.results = [];
   $scope.loading = false;
   $scope.searchTerm = '';
-  $scope.message = '';
+  $scope.message = 'Start searching for media';
 
   $scope.search = function() {
     $scope.results = [];
-    $scope.loading = true;
 
-    // TODO: ADD LOADING SCREEN
-    // TODO: PLACEHOLDER WHEN RESULTS ARE FIRST EMPTY
-    // TODO: NO RESULTS FOUND MESSAGE IF RESULTS ARE EMPTY
-    // TODO: DISPLAY MESSAGES ON SCREEN
     // TODO: PAGINATION
 
-    $http
-      .get(`https://itunes.apple.com/search?term=${$scope.searchTerm}`)
-      .then(({ data }) => {
-        if (data.resultCount > 0) $scope.results = data.results;
-        console.log(data.results);
-        $scope.loading = false;
-      })
-      .catch((error) => {
-        $scope.setMessage('Something went wrong... Please try again.');
-        $scope.loading = false;
-      });
+    // check if search isn't empty
+    if ($scope.searchTerm) {
+      // request data from api
+      $scope.loading = true;
+      $http
+        .get(`https://itunes.apple.com/search?term='${$scope.searchTerm}'`)
+        .then(({ data }) => {
+          // if there is results assign them to scope
+          if (data.resultCount > 0) {
+            $scope.results = data.results;
+          } else {
+            $scope.setMessage('No results found...');
+          }
+
+          $scope.loading = false;
+        })
+        .catch((error) => {
+          $scope.setMessage('Something went wrong, Please try again.');
+          $scope.loading = false;
+        });
+    } else {
+      $scope.setMessage('Start searching for media');
+    }
   };
 
   $scope.setMessage = function(message) {

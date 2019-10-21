@@ -57,49 +57,64 @@
               class="search-bar__input"
             />
             <label for="search" class="search-bar__label">Search</label>
-            <i role="button" class="search-bar__button material-icons prefix">
+            <i
+              ng-click="search()"
+              role="button"
+              class="search-bar__button material-icons prefix"
+            >
               search
             </i>
           </div>
         </form>
-        <ul class="media-list">
-          <li ng-cloak ng-repeat="media in results" class="media-list__item">
-            <div class="media">
-              <img
-                ng-src="{{ media.artworkUrl100 }}"
-                alt="{{ media.artistName }} - {{ media.trackName }}"
-                class="media__img"
-              />
-              <div class="media__text-box">
-                <h2 class="media__title heading-4">{{ media.trackName }}</h2>
-                <span class="media__price heading-4">
-                  {{ media.trackPrice | currency: '£' }}
-                </span>
-              </div>
-              <div class="media__text-box">
-                <p class="media__subtitle">{{ media.artistName }}</p>
+        <div ng-show="!loading">
+          <ul ng-if="results.length" class="media-list">
+            <li ng-cloak ng-repeat="media in results" class="media-list__item">
+              <div class="media">
+                <img
+                  ng-src="{{ media.artworkUrl100 }}"
+                  alt="{{ media.artistName }} - {{ media.trackName }}"
+                  class="media__img"
+                />
+                <div class="media__text-box">
+                  <h2 class="media__title heading-4">{{ media.trackName }}</h2>
+                  <span class="media__price heading-4">
+                    {{ media.trackPrice | currency: '£' }}
+                  </span>
+                </div>
+                <div class="media__text-box">
+                  <p class="media__subtitle">{{ media.artistName }}</p>
+                  <a
+                    ng-href="{{ media.previewUrl }}"
+                    target="_blank"
+                    class="media__link"
+                    >Preview</a
+                  >
+                </div>
                 <a
-                  ng-href="{{ media.previewUrl }}"
+                  ng-href="{{ media.trackViewUrl }}"
                   target="_blank"
-                  class="media__link"
-                  >Preview</a
+                  class="media__button button button--primary"
                 >
+                  Buy Now
+                </a>
               </div>
-              <a
-                ng-href="{{ media.trackViewUrl }}"
-                target="_blank"
-                class="media__button button button--primary"
-              >
-                Buy Now
-              </a>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+          <div ng-if="!results.length" class="message-box">
+            <img
+              src="../assets/images/illustrations/search.svg"
+              alt="illustration of magnify glass"
+              class="message-box__img"
+            />
+            <p ng-if="message" class="message-box__text">
+              {{ message }}
+            </p>
+          </div>
+        </div>
+        <div ng-if="loading" class="loader"></div>
       </section>
     </main>
-
     <div ng-include="'../includes/footer.html'"></div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../assets/js/index.js" type="module"></script>

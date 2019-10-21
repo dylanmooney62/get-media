@@ -1,0 +1,12 @@
+.message-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 30rem;
+}
+
+.message-box__img {
+  width: 10rem;
+  margin-bottom: $space-lg;
+}
