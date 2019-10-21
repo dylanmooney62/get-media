@@ -1,4 +1,4 @@
-<div ng-controller="basketCtrl" class="basket">
+<form ng-controller="basketCtrl" class="basket">
   <ul class="basket__list">
     <li ng-repeat="item in basket" class="basket__item">
       <div class="basket-item">
@@ -37,4 +37,4 @@
     <dd class="basket__total-price">{{ getTotal() | currency: '£' }}</dd>
   </dl>
   <button class="button button--primary button--block">Checkout</button>
-</div>
+</form>
