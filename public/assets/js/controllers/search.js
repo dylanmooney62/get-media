@@ -7,8 +7,6 @@ export default function($scope, $http) {
   $scope.search = function() {
     $scope.results = [];
 
-    // TODO: PAGINATION
-
     // check if search isn't empty
     if ($scope.searchTerm) {
       // request data from api
@@ -22,7 +20,7 @@ export default function($scope, $http) {
           } else {
             $scope.setMessage('No results found.');
           }
-
+          console.log(data.results);
           $scope.loading = false;
         })
         .catch((error) => {

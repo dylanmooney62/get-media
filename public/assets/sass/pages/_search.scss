@@ -14,7 +14,7 @@
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 25rem));
   grid-template-rows: auto;
-  gap: $space-3xl;
+  gap: $space-2xl $space-xl;
   justify-content: center;
   margin-bottom: $space-3xl;
 }

@@ -82,7 +82,10 @@
                 <div class="media__text-box">
                   <h2 class="media__title heading-4">{{ media.trackName }}</h2>
                   <span class="media__price heading-4">
-                    {{ media.trackPrice | currency: '£' }}
+                    {{
+                      (media.trackPrice >= 0 ? media.trackPrice : 0)
+                        | currency: '£'
+                    }}
                   </span>
                 </div>
                 <div class="media__text-box">
@@ -104,9 +107,6 @@
               </div>
             </li>
           </ul>
-          <div ng-if="results.length > 8" class="pagination">
-            <dir-pagination-controls></dir-pagination-controls>
-          </div>
           <div ng-if="!results.length" class="message-box">
             <img
               src="../assets/images/illustrations/search.svg"
@@ -116,6 +116,9 @@
             <p ng-if="message" class="message-box__text">
               {{ message }}
             </p>
+          </div>
+          <div ng-if="results.length > 8" class="pagination">
+            <dir-pagination-controls></dir-pagination-controls>
           </div>
         </div>
         <div ng-if="loading" class="loader"></div>
