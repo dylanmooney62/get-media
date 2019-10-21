@@ -614,6 +614,7 @@ h6 {
 }
 
 .search-bar {
+  width: 90%;
   max-width: 60rem;
   margin: 0 auto;
   margin-bottom: 9.6rem;
@@ -631,6 +632,34 @@ h6 {
 
 .search-bar__button {
   cursor: pointer;
+}
+
+.media {
+  width: 25rem;
+}
+
+.media__img {
+  width: 25rem;
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.media__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media__text-box:last-of-type {
+  margin-bottom: 1.6rem;
 }
 
 .header {
@@ -1065,12 +1094,27 @@ h6 {
 .section--search {
   width: 100%;
   margin: 0 auto;
-  max-width: 110rem;
+  max-width: 120rem;
 }
 
 @media only screen and (max-width: 1240px) {
   .section--search {
     width: 95%;
   }
+}
+
+.media-list {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  -ms-grid-columns: (minmax(25rem, 25rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 25rem));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 6.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

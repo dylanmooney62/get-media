@@ -1,0 +1,20 @@
+.media {
+  width: 25rem;
+}
+
+.media__img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.media__text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media__text-box:last-of-type {
+  margin-bottom: $space-md;
+}
