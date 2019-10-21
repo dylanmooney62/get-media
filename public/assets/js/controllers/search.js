@@ -4,6 +4,8 @@ export default function($scope, $http) {
   $scope.searchTerm = '';
   $scope.message = 'Start searching for media.';
 
+  // TODO: APPLY SCROLLING TO TOP FOR PAGINATION ON MOBILE
+
   $scope.search = function() {
     $scope.results = [];
 

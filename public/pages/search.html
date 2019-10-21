@@ -117,11 +117,11 @@
               {{ message }}
             </p>
           </div>
-          <div ng-if="results.length > 8" class="pagination">
+          <div ng-cloak ng-if="results.length > 8" class="pagination">
             <dir-pagination-controls></dir-pagination-controls>
           </div>
         </div>
-        <div ng-if="loading" class="loader"></div>
+        <div ng-cloak ng-if="loading" class="loader"></div>
       </section>
     </main>
 

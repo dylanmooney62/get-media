@@ -617,7 +617,7 @@ h6 {
   width: 90%;
   max-width: 60rem;
   margin: 0 auto;
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
 }
 
 .search-bar__input {
@@ -756,6 +756,15 @@ h6 {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pagination li.active {
@@ -1230,5 +1239,14 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 6.4rem;
+}
+
+.media-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
