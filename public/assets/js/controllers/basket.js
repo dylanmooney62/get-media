@@ -25,10 +25,12 @@ export default function($scope, $rootScope) {
   };
 
   $scope.removeItem = function(id) {
+    // if id of item clicked is found it is removed from the array
     $scope.basket = $scope.basket.filter((item) => item.id !== id);
   };
 
   $scope.getTotal = function() {
+    // loops through array and accumulates the quantity * price of each item
     return $scope.basket.reduce((total, { quantity, price }) => {
       return total + quantity * price;
     }, 0);

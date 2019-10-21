@@ -4,9 +4,9 @@
       <div class="basket-item">
         <i
           ng-click="removeItem(item.id)"
-          class="basket-item__close material-icons"
+          class="basket-item__delete material-icons"
           role="button"
-          >close</i
+          >delete</i
         >
         <img
           class="basket-item__img"
@@ -15,12 +15,18 @@
         />
         <div class="basket-item__info">
           <p class="basket-item__title">{{ item.title }}</p>
-          <div class="basket-item__form">
-            <span class="basket-item__quantity">{{ item.quantity }}</span>
-            <span>&times;</span>
-            <span class="basket-item__price">
-              {{ item.price | currency: '£' }}
-            </span>
+          <div class="basket-item__form-group">
+            <div class="basket-item__quantity input-field">
+              <input type="number" ng-model="item.quantity" min="0" required />
+            </div>
+            <div class="basket-item__accumulator">
+              <i class="basket-item__times material-icons">
+                close
+              </i>
+              <span class="basket-item__price">
+                {{ item.price | currency: '£' }}
+              </span>
+            </div>
           </div>
         </div>
       </div>
