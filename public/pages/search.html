@@ -46,7 +46,17 @@
       onload="active = 'search'"
     ></div>
 
-    <main></main>
+    <main>
+      <section class="section section--search">
+        <div class="search-bar input-field">
+          <input type="text" id="search" class="search-bar__input" />
+          <label for="search" class="search-bar__label">Search</label>
+          <i role="button" class="search-bar__button material-icons prefix">
+            search
+          </i>
+        </div>
+      </section>
+    </main>
 
     <div ng-include="'../includes/footer.html'"></div>
 

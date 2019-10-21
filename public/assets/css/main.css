@@ -23,6 +23,11 @@ html {
           box-sizing: inherit;
 }
 
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 400;
@@ -608,6 +613,26 @@ h6 {
   color: #3e3e3e;
 }
 
+.search-bar {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 9.6rem;
+}
+
+.search-bar__input {
+  font-size: 1.6rem;
+}
+
+.search-bar__label {
+  font-size: 1.6rem !important;
+  color: #3e3e3e;
+  top: -1rem !important;
+}
+
+.search-bar__button {
+  cursor: pointer;
+}
+
 .header {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#01bfb0), to(#174079));
   background-image: linear-gradient(to bottom right, #01bfb0, #174079);
@@ -981,6 +1006,10 @@ h6 {
   position: relative;
 }
 
+.section:first-of-type {
+  padding-top: 12rem;
+}
+
 .section__border {
   position: absolute;
   width: 100%;
@@ -1031,5 +1060,17 @@ h6 {
 
 .section--cta p {
   margin-bottom: 4.8rem;
+}
+
+.section--search {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 110rem;
+}
+
+@media only screen and (max-width: 1240px) {
+  .section--search {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

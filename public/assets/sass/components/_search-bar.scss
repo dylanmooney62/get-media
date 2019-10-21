@@ -1,0 +1,19 @@
+.search-bar {
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: $space-4xl;
+}
+
+.search-bar__input {
+  font-size: $text-base;
+}
+
+.search-bar__label {
+  font-size: $text-base !important;
+  color: $color-dark-grey-2;
+  top: -1rem !important;
+}
+
+.search-bar__button {
+  cursor: pointer;
+}

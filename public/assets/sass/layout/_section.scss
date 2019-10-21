@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.section:first-of-type {
+  padding-top: 12rem;
+}
+
 .section__border {
   position: absolute;
   width: 100%;
