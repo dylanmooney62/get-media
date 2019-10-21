@@ -2,6 +2,18 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  position: relative;
+}
+
+.basket-item__close {
+  position: absolute;
+  top: 0rem;
+  right: 0.1rem;
+  font-size: $text-base !important;
+  line-height: 1 !important;
+  height: unset !important;
+  color: $color-light-grey-1;
+  cursor: pointer;
 }
 
 .basket-item__img {
@@ -19,4 +31,5 @@
   font-size: $text-sm;
   color: $color-dark-grey-1;
   margin-bottom: $space-xs;
+  line-height: 1.3;
 }

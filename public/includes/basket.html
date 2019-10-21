@@ -2,6 +2,12 @@
   <ul class="basket__list">
     <li ng-repeat="item in basket" class="basket__item">
       <div class="basket-item">
+        <i
+          ng-click="removeItem(item.id)"
+          class="basket-item__close material-icons"
+          role="button"
+          >close</i
+        >
         <img
           class="basket-item__img"
           ng-src="../assets/images/shop/{{ item.id }}.png"
