@@ -52,14 +52,14 @@
         <div class="section--contact__container">
           <form
             class="form"
-            action="mailto:test@gmail.com"
-            method="POST"
-            enctype="text/plain"
+            ng-controller="formCtrl"
+            ng-submit="onSubmit($event)"
           >
             <div class="form__group input-field">
               <input
+                ng-model="name"
                 type="text"
-                class="form__input "
+                class="form__input"
                 id="name"
                 name="name"
                 required
@@ -68,8 +68,9 @@
             </div>
             <div class="form__group input-field">
               <input
-                type="text"
-                class="form__input "
+                ng-model="email"
+                type="email"
+                class="form__input"
                 id="email"
                 name="email"
                 required
@@ -78,7 +79,8 @@
             </div>
             <div class="form__group input-field">
               <textarea
-                class="form__input form__textarea materialize-textarea "
+                ng-model="message"
+                class="form__input form__textarea materialize-textarea"
                 name="message"
                 id="message"
                 required
