@@ -805,6 +805,14 @@ h6 {
   color: #3e3e3e;
 }
 
+.form__input.ng-dirty.ng-invalid {
+  border-bottom: 0.1rem solid #ea526f;
+}
+
+.form__input.ng-dirty.ng-invalid + label {
+  color: #ea526f;
+}
+
 .form__label {
   font-size: 1.6rem !important;
   top: -0.6rem !important;

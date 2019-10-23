@@ -12,6 +12,14 @@
   color: $color-dark-grey-2;
 }
 
+.form__input.ng-dirty.ng-invalid {
+  border-bottom: 0.1rem solid $color-tertiary;
+}
+
+.form__input.ng-dirty.ng-invalid + label {
+  color: $color-tertiary;
+}
+
 .form__label {
   font-size: $text-base !important;
   top: -0.6rem !important;

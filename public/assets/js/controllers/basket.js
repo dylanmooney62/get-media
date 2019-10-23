@@ -44,12 +44,14 @@ export default function($scope, $rootScope) {
     // removes items with quantity equal to 0 or less than 0
     const filteredBasket = $scope.basket.filter((item) => item.quantity > 0);
 
+    // if local storage exists set basket in storage to filteredBasket
     if (window.localStorage) {
       localStorage.setItem('basket', JSON.stringify(filteredBasket));
     }
   };
 
   $scope.loadBasket = function() {
+    // if basket exists in local store get basket and assign it to scope
     if (window.localStorage && localStorage.getItem('basket')) {
       $scope.basket = JSON.parse(localStorage.getItem('basket'));
     }

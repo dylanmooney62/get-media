@@ -8,6 +8,7 @@ export default function($scope, $rootScope) {
     { id: 5, title: 'Apple Store Credit', credit: 100, price: 100 },
   ];
 
+  // emits event which is recieved by basket.js
   $scope.addToBasket = function(item) {
     $rootScope.$emit('addedToBasket', item);
   };
