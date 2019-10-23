@@ -8,6 +8,8 @@
   font-weight: $weight-semibold;
   font-family: inherit;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 
   &:focus {
     outline: none;
@@ -46,6 +48,11 @@
   padding: $space-md $space-2xl;
 }
 
-.button--bloack {
+.button--block {
   display: block;
+}
+
+.button__icon {
+  font-size: $text-sm;
+  margin-left: $space-xs;
 }

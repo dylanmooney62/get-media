@@ -1,3 +1,24 @@
 .section--contact {
   @include container('lg');
+  text-align: center;
+}
+
+.section--contact .heading-2 {
+  margin-bottom: $space-3xl;
+}
+
+.section--contact__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section--contact__illustration {
+  width: 60rem;
+  margin-left: $space-3xl;
+  transform: translateY(-6rem);
+
+  @media only screen and (max-width: 1240px) {
+    display: none;
+  }
 }

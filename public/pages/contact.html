@@ -47,7 +47,58 @@
     ></div>
 
     <main>
-      <section class="section section--contact"></section>
+      <section class="section section--contact">
+        <h2 class="heading-2">Have a Suggestion? Let us Know!</h2>
+        <div class="section--contact__container">
+          <form
+            class="form"
+            action="mailto:test@gmail.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="form__group input-field">
+              <input
+                type="text"
+                class="form__input "
+                id="name"
+                name="name"
+                required
+              />
+              <label for="name" class="form__label">Name</label>
+            </div>
+            <div class="form__group input-field">
+              <input
+                type="text"
+                class="form__input "
+                id="email"
+                name="email"
+                required
+              />
+              <label for="email" class="form__label">Email</label>
+            </div>
+            <div class="form__group input-field">
+              <textarea
+                class="form__input form__textarea materialize-textarea "
+                name="message"
+                id="message"
+                required
+              ></textarea>
+              <label for="message" class="form__label">Message</label>
+            </div>
+            <button type="submit" class="form__button button button--primary">
+              Send
+              <i class="material-icons button__icon">
+                send
+              </i>
+            </button>
+          </form>
+          <img
+            class="section--contact__illustration"
+            src="../assets/images/illustrations/contact.svg"
+            alt="illustration of people using phones"
+          />
+        </div>
+      </section>
     </main>
 
     <div ng-include="'../includes/footer.html'"></div>
