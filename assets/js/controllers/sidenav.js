@@ -1,4 +1,4 @@
-export default function() {
+export default function($scope) {
   const nav = document.querySelector('.sidenav');
   const navigation = M.Sidenav.init(nav, {
     edge: 'left',
