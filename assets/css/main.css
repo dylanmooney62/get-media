@@ -454,6 +454,12 @@ h6 {
   list-style: none;
 }
 
+@media only screen and (min-width: 1500px) {
+  .voucher-list {
+    max-width: 130rem;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .voucher-list {
     width: 95%;
@@ -843,6 +849,12 @@ h6 {
   text-align: center;
 }
 
+@media only screen and (min-width: 1500px) {
+  .header__container {
+    max-width: 130rem;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .header__container {
     width: 95%;
@@ -897,6 +909,12 @@ h6 {
           justify-content: space-between;
   position: relative;
   margin-top: -3.2rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .header--lg__content {
+    max-width: 130rem;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -1010,6 +1028,12 @@ h6 {
   z-index: 200;
 }
 
+@media only screen and (min-width: 1500px) {
+  .nav {
+    max-width: 130rem;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .nav {
     width: 95%;
@@ -1100,6 +1124,12 @@ h6 {
   max-width: 120rem;
   margin-bottom: 1.6rem;
   border-top: 0.1rem solid #c2c2c2;
+}
+
+@media only screen and (min-width: 1500px) {
+  .footer {
+    max-width: 130rem;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -1245,6 +1275,12 @@ h6 {
   text-align: center;
 }
 
+@media only screen and (min-width: 1500px) {
+  .section--cta {
+    max-width: 130rem;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .section--cta {
     width: 95%;
@@ -1263,6 +1299,12 @@ h6 {
   width: 100%;
   margin: 0 auto;
   max-width: 120rem;
+}
+
+@media only screen and (min-width: 1500px) {
+  .section--search {
+    max-width: 130rem;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -1314,6 +1356,12 @@ h6 {
   margin: 0 auto;
   max-width: 120rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 1500px) {
+  .section--contact {
+    max-width: 130rem;
+  }
 }
 
 @media only screen and (max-width: 1240px) {
