@@ -1,16 +1,16 @@
-<form ng-controller="basketCtrl" class="basket">
+<form data-ng-controller="basketCtrl" class="basket">
   <ul class="basket__list">
-    <li ng-repeat="item in basket" class="basket__item">
+    <li data-ng-repeat="item in basket" class="basket__item">
       <div class="basket-item">
         <i
-          ng-click="removeItem(item.id)"
+          data-ng-click="removeItem(item.id)"
           class="basket-item__delete material-icons"
           role="button"
           >delete</i
         >
         <img
           class="basket-item__img"
-          ng-src="/assets/images/shop/{{ item.id }}.png"
+          data-ng-src="/assets/images/shop/{{ item.id }}.png"
           alt="{{ item.title }}"
         />
         <div class="basket-item__info">
@@ -19,8 +19,8 @@
             <div class="basket-item__quantity input-field">
               <input
                 type="number"
-                ng-model="item.quantity"
-                ng-change="saveBasket()"
+                data-ng-model="item.quantity"
+                data-ng-change="saveBasket()"
                 min="1"
                 required
               />

@@ -28,9 +28,9 @@
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body ng-app="app">
+  <body data-ng-app="app">
     <header class="header">
-      <div ng-include="'/includes/navigation.html'"></div>
+      <div data-ng-include="'/includes/navigation.html'"></div>
       <div class="header__container">
         <h1 class="header__title heading-1">Search</h1>
       </div>
@@ -41,14 +41,17 @@
       />
     </header>
 
-    <div ng-include="'/includes/sidenav.html'" onload="active = 'search'"></div>
+    <div
+      data-ng-include="'/includes/sidenav.html'"
+      onload="active = 'search'"
+    ></div>
 
     <main>
-      <section ng-controller="searchCtrl" class="section section--search">
-        <form ng-submit="search()">
+      <section data-ng-controller="searchCtrl" class="section section--search">
+        <form data-ng-submit="search()">
           <div class="search-bar input-field">
             <input
-              ng-model="searchTerm"
+              data-ng-model="searchTerm"
               type="text"
               id="search"
               class="search-bar__input"
@@ -66,13 +69,13 @@
         <div ng-show="!loading" class="section--search__results">
           <ul ng-if="results.length" class="media-list">
             <li
-              ng-cloak
-              dir-paginate="media in results | itemsPerPage: 8"
+              data-ng-cloak
+              data-dir-paginate="media in results | itemsPerPage: 8"
               class="media-list__item"
             >
               <div class="media">
                 <img
-                  ng-src="{{ media.artworkUrl100 }}"
+                  data-ng-src="{{ media.artworkUrl100 }}"
                   alt="{{ media.artistName }} - {{ media.trackName }}"
                   class="media__img"
                 />
@@ -104,25 +107,25 @@
               </div>
             </li>
           </ul>
-          <div ng-if="!results.length" class="message-box">
+          <div data-ng-if="!results.length" class="message-box">
             <img
               src="/assets/images/illustrations/search.svg"
               alt="illustration of magnify glass"
               class="message-box__img"
             />
-            <p ng-if="message" class="message-box__text">
+            <p data-ng-if="message" class="message-box__text">
               {{ message }}
             </p>
           </div>
-          <div ng-cloak ng-if="results.length > 8" class="pagination">
+          <div data-ng-cloak data-ng-if="results.length > 8" class="pagination">
             <dir-pagination-controls></dir-pagination-controls>
           </div>
         </div>
-        <div ng-cloak ng-if="loading" class="loader"></div>
+        <div data-ng-cloak data-ng-if="loading" class="loader"></div>
       </section>
     </main>
 
-    <div ng-include="'/includes/footer.html'"></div>
+    <div data-ng-include="'/includes/footer.html'"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/assets/js/index.js" type="module"></script>

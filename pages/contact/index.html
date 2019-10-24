@@ -28,9 +28,9 @@
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body ng-app="app">
+  <body data-ng-app="app">
     <header class="header">
-      <div ng-include="'/includes/navigation.html'"></div>
+      <div data-ng-include="'/includes/navigation.html'"></div>
       <div class="header__container">
         <h1 class="header__title heading-1">Contact</h1>
       </div>
@@ -42,7 +42,7 @@
     </header>
 
     <div
-      ng-include="'/includes/sidenav.html'"
+      data-ng-include="'/includes/sidenav.html'"
       onload="active = 'contact'"
     ></div>
 
@@ -52,13 +52,13 @@
         <div class="section--contact__container">
           <form
             class="form"
-            ng-controller="formCtrl"
-            ng-submit="onSubmit($event)"
+            data-ng-controller="formCtrl"
+            data-ng-submit="onSubmit($event)"
             name="form"
           >
             <div class="form__group input-field">
               <input
-                ng-model="name"
+                data-ng-model="name"
                 type="text"
                 class="form__input"
                 id="name"
@@ -69,7 +69,7 @@
             </div>
             <div class="form__group input-field">
               <input
-                ng-model="email"
+                data-ng-model="email"
                 type="email"
                 class="form__input"
                 id="email"
@@ -80,7 +80,7 @@
             </div>
             <div class="form__group input-field">
               <textarea
-                ng-model="message"
+                data-ng-model="message"
                 class="form__input form__textarea materialize-textarea"
                 name="message"
                 id="message"
@@ -104,7 +104,7 @@
       </section>
     </main>
 
-    <div ng-include="'/includes/footer.html'"></div>
+    <div data-ng-include="'/includes/footer.html'"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="/assets/js/index.js" type="module"></script>

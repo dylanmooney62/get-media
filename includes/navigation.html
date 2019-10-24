@@ -1,4 +1,4 @@
-<nav ng-controller="navCtrl" class="nav">
+<nav data-ng-controller="navCtrl" class="nav">
   <ul class="nav__list">
     <li class="nav__item nav__item--hamburger">
       <a
@@ -61,13 +61,16 @@
     </li>
     <li class="nav__item nav__item--basket">
       <i
-        ng-click="showBasket = !showBasket"
+        data-ng-click="showBasket = !showBasket"
         class="basket-icon material-icons"
         role="button"
       >
         shopping_basket
       </i>
-      <div ng-show="showBasket" ng-include="'/includes/basket.html'"></div>
+      <div
+        data-ng-show="showBasket"
+        data-ng-include="'/includes/basket.html'"
+      ></div>
     </li>
   </ul>
 </nav>

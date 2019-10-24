@@ -32,10 +32,10 @@
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body ng-app="app">
+  <body data-ng-app="app">
     <header class="header">
       <div
-        ng-include="'/includes/navigation.html'"
+        data-ng-include="'/includes/navigation.html'"
         onload="active = 'vouchers'"
       ></div>
       <div class="header__container">
@@ -49,7 +49,7 @@
     </header>
 
     <div
-      ng-include="'/includes/sidenav.html'"
+      data-ng-include="'/includes/sidenav.html'"
       onload="active = 'vouchers'"
     ></div>
 
@@ -57,8 +57,8 @@
       <section class="section section--vouchers">
         <ul ng-controller="shopCtrl" class="voucher-list">
           <li
-            ng-cloak
-            ng-repeat="voucher in vouchers"
+            data-ng-cloak
+            data-ng-repeat="voucher in vouchers"
             class="voucher-list__item"
           >
             <div class="voucher">
@@ -73,7 +73,7 @@
                 </span>
               </div>
               <button
-                ng-click="addToBasket(voucher)"
+                data-ng-click="addToBasket(voucher)"
                 class="voucher__button button button--primary"
               >
                 Add to Basket
@@ -84,7 +84,7 @@
       </section>
     </main>
 
-    <div ng-include="'/includes/footer.html'"></div>
+    <div data-ng-include="'/includes/footer.html'"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
