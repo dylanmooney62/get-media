@@ -9,22 +9,22 @@ export default function($scope) {
     // check all inputs have been filled in
     if ($scope.name && $scope.email && $scope.message) {
       $scope.reset();
-      M.toast({ html: 'Message Sent!' });
+      M.toast({ html: 'Message sent!' });
       return;
     }
 
     // display message form inputs that have not been filled in
 
     if (!$scope.name) {
-      M.toast({ html: 'Please Enter Your Name!' });
+      M.toast({ html: 'Please enter your name.' });
     }
 
     if (!$scope.email) {
-      M.toast({ html: 'Please Enter Your Email!' });
+      M.toast({ html: 'Please enter your email.' });
     }
 
     if (!$scope.message) {
-      M.toast({ html: 'Please Enter Your Message!' });
+      M.toast({ html: 'Please enter your message.' });
     }
   };
 
