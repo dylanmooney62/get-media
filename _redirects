@@ -1,2 +1,8 @@
-/pages/about /about 301
-/about /pages/about 200
+/pages/search /search 301
+/search /pages/search 200
+
+/pages/vouchers /vouchers 301
+/vouchers /pages/vouchers 200
+
+/pages/contact /contact 301
+/contact /pages/contact 200
