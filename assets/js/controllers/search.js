@@ -12,7 +12,7 @@ export default function($scope, $http) {
       // request data from api
       $scope.loading = true;
       $http
-        .get(`https://itunes.apple.com/search?term='${$scope.searchTerm}'`)
+        .get(`https://itunes.apple.com/search?term="${$scope.searchTerm}"`)
         .then(({ data }) => {
           // if there is results assign them to scope
           if (data.resultCount > 0) {
