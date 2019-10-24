@@ -59,7 +59,7 @@
             />
             <label for="search" class="search-bar__label">Search</label>
             <i
-              ng-click="search()"
+              data-ng-click="search()"
               role="button"
               class="search-bar__button material-icons prefix"
             >
@@ -67,8 +67,8 @@
             </i>
           </div>
         </form>
-        <div ng-show="!loading" class="section--search__results">
-          <ul ng-if="results.length" class="media-list">
+        <div data-ng-show="!loading" class="section--search__results">
+          <ul data-ng-if="results.length" class="media-list">
             <li
               data-ng-cloak
               data-dir-paginate="media in results | itemsPerPage: 8"
@@ -77,6 +77,7 @@
               <div class="media">
                 <img
                   data-ng-src="{{ media.artworkUrl100 }}"
+                  src=""
                   alt="{{ media.artistName }} - {{ media.trackName }}"
                   class="media__img"
                 />
@@ -92,7 +93,8 @@
                 <div class="media__text-box">
                   <p class="media__subtitle">{{ media.artistName }}</p>
                   <a
-                    ng-href="{{ media.previewUrl }}"
+                    data-ng-href="{{ media.previewUrl }}"
+                    href=""
                     target="_blank"
                     class="media__link"
                     >Preview</a
