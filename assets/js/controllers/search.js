@@ -23,7 +23,7 @@ export default function($scope, $http) {
           $scope.loading = false;
         })
         .catch((error) => {
-          $scope.setMessage('Something went wrong, Please try again.');
+          $scope.setMessage('Something went wrong. Please try again.');
           $scope.loading = false;
         });
     } else {
