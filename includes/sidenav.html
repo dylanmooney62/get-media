@@ -1,15 +1,12 @@
 <ul ng-controller="sidenavCtrl" id="slide-out" class="sidenav">
   <li class="sidenav__item {{ active === 'home' ? 'active' : '' }}">
-    <a
-      href="index.html"
-      class="sidenav__link waves-effect sidenav__link waves-primary"
-    >
+    <a href="/" class="sidenav__link waves-effect sidenav__link waves-primary">
       Home
     </a>
   </li>
   <li class="sidenav__item {{ active === 'search' ? 'active' : '' }}">
     <a
-      href="search.html"
+      href="/pages/search/"
       class="sidenav__link waves-effect sidenav__link waves-primary"
     >
       Search
@@ -17,7 +14,7 @@
   </li>
   <li class="sidenav__item {{ active === 'vouchers' ? 'active' : '' }}">
     <a
-      href="vouchers.html"
+      href="/pages/vouchers/"
       class="sidenav__link waves-effect sidenav__link waves-primary"
     >
       Vouchers
@@ -25,7 +22,7 @@
   </li>
   <li class="sidenav__item {{ active === 'contact' ? 'active' : '' }}">
     <a
-      href="contact.html"
+      href="/pages/contact/"
       class="sidenav__link waves-effect sidenav__link waves-primary"
     >
       Contact
