@@ -8,7 +8,7 @@
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="./public/assets/icons/favicon.ico"
+      href="./assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <!-- materialize -->
@@ -26,16 +26,16 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./public/assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body ng-app="app">
     <header class="header--lg">
       <img
-        src="./public/assets/images/background.svg"
+        src="./assets/images/background.svg"
         class="header--lg__bg"
         aria-hidden="true"
       />
-      <div ng-include="'./public/includes/navigation.html'"></div>
+      <div ng-include="'./includes/navigation.html'"></div>
 
       <div class="header--lg__content">
         <div class="header--lg__text-box">
@@ -44,27 +44,24 @@
             We are GetMedia, the best provider of free media content across the
             globe.
           </p>
-          <a href="./public/search.html" class="button button--primary"
+          <a href="./search.html" class="button button--primary"
             >Search Media</a
           >
         </div>
         <img
           class="header--lg__illustration"
-          src="./public/assets/images/illustrations/compose-music.svg"
+          src="./assets/images/illustrations/compose-music.svg"
           alt="composing music"
         />
       </div>
       <img
         class="wave-border"
-        src="./public/assets/images/wave-border.svg"
+        src="./assets/images/wave-border.svg"
         aria-hidden="true"
       />
     </header>
 
-    <div
-      ng-include="'./public/includes/sidenav.html'"
-      onload="active = 'home'"
-    ></div>
+    <div ng-include="'./includes/sidenav.html'" onload="active = 'home'"></div>
 
     <main>
       <section class="section section--features">
@@ -73,7 +70,7 @@
           <li class="feature-list__item">
             <div class="feature">
               <img
-                src=".public/assets/images/illustrations/moon-landing.svg"
+                src="./assets/images/illustrations/moon-landing.svg"
                 alt="illustration of astronaut landing on moon"
                 class="feature__img"
               />
@@ -87,7 +84,7 @@
           <li class="feature-list__item">
             <div class="feature">
               <img
-                src="./public/assets/images/illustrations/music-app.svg"
+                src="./assets/images/illustrations/music-app.svg"
                 class="feature__img"
                 alt="illustration of women dancing next to mobile device displaying music player app"
               />
@@ -100,7 +97,7 @@
           <li class="feature-list__item">
             <div class="feature">
               <img
-                src="./public/assets/images/illustrations/social.svg"
+                src="./assets/images/illustrations/social.svg"
                 class="feature__img"
                 alt="illustration of women sitting beside large mobile device displaying social media apps"
               />
@@ -115,7 +112,7 @@
       <section class="section section--info">
         <div class="info-banner">
           <img
-            src="./public/assets/images/illustrations/imagination.svg"
+            src="./assets/images/illustrations/imagination.svg"
             class="info-banner__img"
             alt="illustration of women wearing headphones looking of into the distance"
           />
@@ -127,14 +124,14 @@
               At GetMedia we have the largest selection of media content
               available across the globe.
             </p>
-            <a href="./public/pages/search.html" class="button button--tertiary"
+            <a href="./pages/search.html" class="button button--tertiary"
               >Search Media</a
             >
           </div>
         </div>
         <img
           class="wave-border"
-          src="./public/assets/images/wave-border.svg"
+          src="./assets/images/wave-border.svg"
           aria-hidden="true"
         />
       </section>
@@ -144,7 +141,7 @@
           Start searching millions of media content right now.
         </p>
         <a
-          href="./public/pages/search.html"
+          href="./pages/search.html"
           class="button button--primary button--large"
         >
           Get Started
@@ -152,10 +149,10 @@
       </section>
     </main>
 
-    <div ng-include="'./public/includes/footer.html'"></div>
+    <div ng-include="'./includes/footer.html'"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./public/assets/js/index.js" type="module"></script>
+    <script src="./assets/js/index.js" type="module"></script>
   </body>
 </html>
