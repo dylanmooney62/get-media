@@ -28,14 +28,15 @@
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body ng-app="app">
+  <body data-ng-app="app">
     <header class="header--lg">
       <img
         src="/assets/images/background.svg"
         class="header--lg__bg"
         aria-hidden="true"
+        alt=""
       />
-      <div ng-include="'/includes/navigation.html'"></div>
+      <div data-ng-include="'/includes/navigation.html'"></div>
 
       <div class="header--lg__content">
         <div class="header--lg__text-box">
@@ -61,12 +62,15 @@
       />
     </header>
 
-    <div ng-include="'/includes/sidenav.html'" onload="active = 'home'"></div>
+    <div
+      data-ng-include="'/includes/sidenav.html'"
+      onload="active = 'home'"
+    ></div>
 
     <main>
       <section class="section section--features">
         <h2 class="heading-2">Unlimited Media, Wherever you are</h2>
-        <div class="feature-list">
+        <ul class="feature-list">
           <li class="feature-list__item">
             <div class="feature">
               <img
@@ -107,7 +111,7 @@
               </p>
             </div>
           </li>
-        </div>
+        </ul>
       </section>
       <section class="section section--info">
         <div class="info-banner">
@@ -146,7 +150,7 @@
       </section>
     </main>
 
-    <div ng-include="'/includes/footer.html'"></div>
+    <div data-ng-include="'/includes/footer.html'"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
