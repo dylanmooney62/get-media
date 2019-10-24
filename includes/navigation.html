@@ -13,10 +13,10 @@
       </a>
     </li>
     <li class="nav__item nav__item--logo">
-      <a href="./index.html" class="nav__link">
+      <a href="/index.html" class="nav__link">
         <div class="logo">
           <img
-            src="../assets/icons/logo-white.svg"
+            src="/assets/icons/logo-white.svg"
             class="logo__icon material-icons"
           />
           <span class="logo__text">GetMedia</span>
@@ -27,7 +27,7 @@
   <ul class="nav__list">
     <li class="nav__item nav__item--link">
       <a
-        href="./search.html"
+        href="/pages/search/index.html"
         class="nav__link {{ active === 'search' ? 'active' : '' }}"
       >
         Search
@@ -35,7 +35,7 @@
     </li>
     <li class="nav__item nav__item--link">
       <a
-        href="./vouchers.html"
+        href="/pages/vouchers/index.html"
         class="nav__link {{ active === 'vouchers' ? 'active' : '' }}"
       >
         Vouchers
@@ -43,7 +43,7 @@
     </li>
     <li class="nav__item nav__item--link">
       <a
-        href="./contact.html"
+        href="/pages/contact/index.html"
         class="nav__link {{ active === 'contact' ? 'active' : '' }}"
       >
         Contact
@@ -67,7 +67,7 @@
       >
         shopping_basket
       </i>
-      <div ng-show="showBasket" ng-include="'../includes/basket.html'"></div>
+      <div ng-show="showBasket" ng-include="'/includes/basket.html'"></div>
     </li>
   </ul>
 </nav>
