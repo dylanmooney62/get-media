@@ -8,7 +8,7 @@
     <!-- favicon -->
     <link
       rel="shortcut icon"
-      href="../../assets/icons/favicon.ico"
+      href="/assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <!-- materialize -->
@@ -26,23 +26,23 @@
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
   <body ng-app="app">
     <header class="header">
-      <div ng-include="'../../includes/navigation.html'"></div>
+      <div ng-include="'/includes/navigation.html'"></div>
       <div class="header__container">
         <h1 class="header__title heading-1">Contact</h1>
       </div>
       <img
         class="wave-border"
-        src="../../assets/images/wave-border.svg"
+        src="/assets/images/wave-border.svg"
         aria-hidden="true"
       />
     </header>
 
     <div
-      ng-include="'../../includes/sidenav.html'"
+      ng-include="'/includes/sidenav.html'"
       onload="active = 'contact'"
     ></div>
 
@@ -97,16 +97,16 @@
           </form>
           <img
             class="section--contact__illustration"
-            src="../../assets/images/illustrations/contact.svg"
+            src="/assets/images/illustrations/contact.svg"
             alt="illustration of people using phones"
           />
         </div>
       </section>
     </main>
 
-    <div ng-include="'../../includes/footer.html'"></div>
+    <div ng-include="'/includes/footer.html'"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="../../assets/js/index.js" type="module"></script>
+    <script src="/assets/js/index.js" type="module"></script>
   </body>
 </html>
