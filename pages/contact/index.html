@@ -42,10 +42,50 @@
       />
     </header>
 
-    <div
-      data-ng-include="'/includes/sidenav.html'"
-      onload="active = 'contact'"
-    ></div>
+    <ul id="slide-out" class="sidenav">
+      <li class="sidenav__item">
+        <a
+          href="/"
+          class="sidenav__link waves-effect sidenav__link waves-primary"
+        >
+          Home
+        </a>
+      </li>
+      <li class="sidenav__item">
+        <a
+          href="/pages/search/"
+          class="sidenav__link waves-effect sidenav__link waves-primary"
+        >
+          Search
+        </a>
+      </li>
+      <li class="sidenav__item ">
+        <a
+          href="/pages/vouchers/"
+          class="sidenav__link waves-effect sidenav__link waves-primary"
+        >
+          Vouchers
+        </a>
+      </li>
+      <li class="sidenav__item active">
+        <a
+          href="/pages/contact/"
+          class="sidenav__link waves-effect sidenav__link waves-primary"
+        >
+          Contact
+        </a>
+      </li>
+      <li class="sidenav__item">
+        <a href="#" class="sidenav__link waves-effect waves-primary">
+          Log In
+        </a>
+      </li>
+      <li class="sidenav__item ">
+        <a href="#" class="sidenav__link waves-effect waves-primary">
+          Sign up
+        </a>
+      </li>
+    </ul>
 
     <main>
       <section class="section section--contact">
