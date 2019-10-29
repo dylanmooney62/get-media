@@ -1,0 +1,25 @@
+{
+  "name": "get-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup js/index.js --format iife --file js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylanmooney62/get-media.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylanmooney62/get-media/issues"
+  },
+  "homepage": "https://github.com/dylanmooney62/get-media#readme",
+  "devDependencies": {
+    "rollup": "^1.26.0"
+  },
+  "dependencies": {}
+}

@@ -1,4 +1,4 @@
-export default function($scope, $http) {
+export default function searchCtrl($scope, $http) {
   $scope.results = [];
   $scope.loading = false;
   $scope.searchTerm = '';
@@ -10,6 +10,7 @@ export default function($scope, $http) {
     // check if search isn't empty
     if ($scope.searchTerm) {
       // request data from api
+
       $scope.loading = true;
       $http
         .get(`https://itunes.apple.com/search?term="${$scope.searchTerm}"`)

@@ -35,9 +35,12 @@ export default function($scope, $rootScope) {
 
   $scope.getTotal = function() {
     // loops through array and accumulates the quantity * price of each item
-    return $scope.basket.reduce((total, { quantity, price }) => {
+
+    const total = $scope.basket.reduce((total, { quantity, price }) => {
       return total + quantity * price;
     }, 0);
+
+    return total || 0;
   };
 
   $scope.saveBasket = function() {
