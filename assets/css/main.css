@@ -1174,21 +1174,6 @@ h6 {
   padding: 3.2rem 0;
 }
 
-@media only screen and (max-width: 1000px) {
-  .footer__list {
-    max-width: 80%;
-    margin: 0 auto;
-    -webkit-transform: translateX(-0.7rem);
-            transform: translateX(-0.7rem);
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .footer__list {
-    max-width: 90%;
-  }
-}
-
 .footer__item {
   padding: unset;
 }
@@ -1200,6 +1185,12 @@ h6 {
 @media only screen and (max-width: 700px) {
   .footer__item:not(:last-child) {
     margin-right: 4.8rem !important;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .footer__item:not(:last-child) {
+    margin-right: 3.2rem !important;
   }
 }
 
