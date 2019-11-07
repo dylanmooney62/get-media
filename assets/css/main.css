@@ -1374,6 +1374,14 @@ h6 {
   width: 100%;
 }
 
+@media only screen and (max-width: 1240px) {
+  .section--contact__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .section--contact__illustration {
   width: 60rem;
   margin-left: 6.4rem;
